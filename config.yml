@@ -1,11 +1,11 @@
 baseURL: # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: Harsh Dadhich
 paginate: 5
 theme: charlolamode
 
 menu:
   main:
-    - name: Resume
-      url: /resume/latest.pdf
+    - name:
 
     # - name: Categories
     #   url: /categories/
@@ -25,6 +25,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowToc: true
+  hideFooter: true
 
   profileMode:
     # Disable to populate home page with 'mainSections' content
