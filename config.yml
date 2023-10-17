@@ -31,7 +31,7 @@ params:
     enabled: true
     title: Harsh Dadhich
     description: Computer Science @ UC Santa Cruz
-    imageUrl: "/images/profile.jpg"
+    imageUrl: "https://avatars3.githubusercontent.com/u/35875034"
     # imageTitle: my image
     # imageWidth: 120
     # imageHeight: 120
