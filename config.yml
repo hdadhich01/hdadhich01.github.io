@@ -6,6 +6,7 @@ menu:
   main:
     - name:
 
+    # test comment
     # - name: Categories
     #   url: /categories/
     #   weight: 10
