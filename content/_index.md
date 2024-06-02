@@ -4,12 +4,10 @@ Actively searching for off-cycle internships
 {{< /alert >}}
 <br>
 
-👤 Hey, I'm Harsh! I'm a sophomore at the *University of California, Santa Cruz*. I'm currently interested in neuroscience, cloud-computing, and AI/ML applications in the real world.
+Hey! I'm a 2<sup>nd</sup> year at the _University of California, Santa Cruz_. I build [projects](https://github.com/hdadhich01/?tab=repositories) to reduce inconvenience and make [guides](https://github.com/hdadhich01/terminal) for others to try. Big fan of software for neuroscience and [productivity](/uses). Also, I'll be interning at [Intuitive](https://www.intuitive.com/en-us) this summer!
 
-<!-- {{< badge >}}
-New article!
-{{< /badge >}} -->
+Send me an [email](mailto:me@harshdadhich.com) to get in touch
 
-📰 I like building stuff that reduces inconvenience. Some of my projects are [SlugTools](https://api.slug.tools), [round-nutrition](https://pypi.org/project/round-nutrition/), and [Albert](https://github.com/hdadhich01/Albert). Right now, I'm working with ephys data under [Braingeneers](https://braingeneers.ucsc.edu) and doing data analytics through [CITRIS](https://citris-uc.org).
-
-☀️ Also, I'll be interning at [Intuitive](https://www.intuitive.com) in Sunnyvale this summer!
+{{< button href="/resume/latest.pdf" target="_self" >}}
+Resume
+{{< /button >}}

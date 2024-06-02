@@ -14,8 +14,8 @@ title = "Harsh Dadhich"
 
 [params.author]
   name = "Harsh Dadhich"
-  image = "img/35875034.jpg"
-  headline = "Computer Science @ UC Santa Cruz"
+  image = "img/headshot.jpg"
+  headline = "Cloud infrastructure, data, and open-source"
   # bio = "A little bit about you"
   links = [
     { email = "mailto:me@harshdadhich.com" },
