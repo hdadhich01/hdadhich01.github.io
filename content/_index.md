@@ -1,10 +1,10 @@
 <br>
 {{< alert "circle-info" >}}
-Actively searching for off-cycle internships
+Actively searching for <b>off-cycle</b> and <b>SU25</b> internships
 {{< /alert >}}
 <br>
 
-Hey! I'm a 2<sup>nd</sup> year at the _University of California, Santa Cruz_. I build [projects](https://github.com/hdadhich01/?tab=repositories) to reduce inconvenience and make [guides](https://github.com/hdadhich01/terminal) for others to try. Big fan of software for neuroscience and [productivity](/uses). Also, I'll be interning at [Intuitive](https://www.intuitive.com/en-us) this summer!
+Hey! I'm an incoming 3<sup>rd</sup> year @ _UC Santa Cruz_. I build [projects](https://github.com/hdadhich01/?tab=repositories) to reduce inconvenience and make [technical guides](https://github.com/hdadhich01/terminal). Big fan of software for education and [productivity](/uses). Also, I'm currently interning at [Intuitive](https://www.intuitive.com/en-us) this summer!
 
 Send me an [email](mailto:me@harshdadhich.com) to get in touch
 
