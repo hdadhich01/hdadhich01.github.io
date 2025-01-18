@@ -2,9 +2,9 @@
 {{< alert "circle-info" >}}
 Actively in search of <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}}
-<br>
+<!-- <br> -->
 
-Hey! I'm a junior @ _UC Santa Cruz_. I like to take [pictures](https://unsplash.com/@hdadhich01), build [stuff](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [guides](https://github.com/hdadhich01/terminal). Big fan of software for education and [productivity](/tools). Previously interned at [Intuitive](https://www.intuitive.com/en-us) this last summer!
+Hey! I'm a junior @ _UC Santa Cruz_. I like to take [pictures](https://unsplash.com/@hdadhich01), build [stuff](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [guides](https://github.com/hdadhich01/terminal). Big fan of software for education and [productivity](/tools), EDC gear, and minimal setups. Previously interned at [Intuitive](https://www.intuitive.com/en-us) this last summer!
 
 Send me an [email](mailto:me@harshdadhich.com) to get in touch
 

@@ -2,31 +2,38 @@
 
 ## Workflow
 
-- [Notion Calendar](https://www.notion.so/product/calendar)
-- [Firefox Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
-- [Shortwave](https://shortwave.com)
-- [Todoist](https://todoist.com)
-- [Obsidian](https://obsidian.md)
-- [Gyazo](https://gyazo.com)
-- [1.1.1.1](https://1.1.1.1)
+- [Fantastical](https://flexibits.com/fantastical) (cal day planning)
+- [Zen Browser](https://zen-browser.app) (arc, but firefox)
+- [Shortwave](https://shortwave.com) (smart email)
+- [Todoist](https://todoist.com) (it's obvious)
+- [Obsidian](https://obsidian.md) (note-taking)
+- [1.1.1.1](https://1.1.1.1) (public wifi use)
+- [CleanShot X](https://cleanshot.com) (quick clips)
 
 ## Dev
 
-- [Warp](https://www.warp.dev)
-- [Tower](https://www.git-tower.com)
-- [Visual Studio Code](https://code.visualstudio.com)
-  - [Cursor](https://cursor.com)
-- [ohmyzsh](https://ohmyz.sh) with [typewritten](https://typewritten.dev)
-- [WakaTime](https://wakatime.com)
-- [GitFront](https://gitfront.io)
+- [Warp](https://www.warp.dev) (AI terminal)
+- [Tower](https://www.git-tower.com) (git history)
+- [OrbStack](https://orbstack.dev) (light VMs)
+- Editors
+  - [Cursor](https://cursor.com) (AI assist)
+  - [Zed](https://zed.dev) (lightweight)
+- [WakaTime](https://wakatime.com) (time tracking)
+- [GitFront](https://gitfront.io) (repo sharing)
 
 ## Lifestyle
 
-- [Endel](https://endel.io)
-- [Co – Star](https://co-star.app)
-- [Overlap](https://www.joinoverlap.com/)
+- [Endel](https://endel.io) (focus music)
+- [Co – Star](https://co-star.app) (astrology)
+- [Overlap](https://www.joinoverlap.com/) (podcast reels)
 
 ## Finance
 
-- [Roi](https://getroi.app/)
+- [Roi](https://getroi.app/) (general tracking)
 - [SplitMyExpenses](https://splitmyexpenses.com)
+
+## Misc
+
+- [Hand Mirror](https://handmirror.app) (webcam glance)
+- [Ice](https://github.com/jordanbaird/Ice) (cleaner menu bar)
+- [NotchNook](https://lo.cafe/notchnook) (cleaner nook)
