@@ -15,15 +15,20 @@
   pageRef = "/"
   weight = 10
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 20
 
 [[main]]
   name = "Tools"
   pageRef = "tools"
   weight = 30
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 40
 
 [[main]]
   identifier = "search"
