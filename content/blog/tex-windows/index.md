@@ -1,5 +1,5 @@
 ---
-title: "LaTeX on Windows through WSL"
+title: "LaTeX Docs on Windows through WSL"
 date: 2022-12-22
 description: "Learn how to get started with writing LaTeX on Windows"
 ---

@@ -4,16 +4,16 @@ layout: "simple"
 description: "Some stuff I use as part of my daily workflow"
 ---
 
-Here's some stuff I use
+Here's some stuff I use – I try to keep it light, tried competitors for most and landed on these:
 
-<img src="setup.jpg" width="70%" />
+<img src="setup.jpg" width="50%" />
 
 ## Workflow
 
 - [Shortwave](https://shortwave.com) (smart email)
 - [Fantastical](https://flexibits.com/fantastical) (calendar + tasks)
 - [Zen Browser](https://zen-browser.app) (arc, but firefox)
-- [Todoist](https://todoist.com) (obvious; syncs w/ cal)
+- [Todoist](https://todoist.com) (obvious; syncs to cal)
 - [Obsidian](https://obsidian.md) (note-taking)
 - [1.1.1.1](https://1.1.1.1) (public Wi-Fi use)
 - [CleanShot X](https://cleanshot.com) (quick clips)
@@ -47,7 +47,7 @@ Here's some stuff I use
 
 ## Misc
 
-stuff stays idle in bg, and pretty lightweight
+stuff stays idle in bg, light on resource usage
 
 - [Swish](https://highlyopinionated.co/swish) (window tiling)
 - [Hand Mirror](https://handmirror.app) (webcam glance)

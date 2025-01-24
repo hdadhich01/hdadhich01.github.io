@@ -3,7 +3,7 @@ title: "About Me"
 layout: "simple"
 ---
 
-<div style="width: 70%">
+<div style="width: 50%">
   <img src="caltrain.jpg" width="100%" />
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: space-between; align-items: center;">
     <span>Canon SD550</span>
