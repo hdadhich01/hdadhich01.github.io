@@ -3,7 +3,7 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}}
 
-Hey! – I'm a **junior @ UC Santa Cruz**. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [**guides**](blog). Big fan of software for education and [**productivity**](/tools), EDC gear, and minimalist design. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) this last summer!
+Hey, I'm a **junior @ UC Santa Cruz**. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [**guides**](blog). I enjoy minimalist design, EDC gear, and software for [**productivity**](/tools) and education. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) this last summer!
 
 Send me an [**email**](mailto:me@harshdadhich.com) to get in touch
 

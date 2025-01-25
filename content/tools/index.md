@@ -4,7 +4,7 @@ layout: "simple"
 description: "Some stuff I use as part of my daily workflow"
 ---
 
-Here's some stuff I use – I try to keep it light, tried competitors for most and landed on these:
+Here's stuff I use, I've tried competitors and landed on these:
 
 <img src="setup.jpg" width="50%" />
 

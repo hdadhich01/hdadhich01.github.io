@@ -36,3 +36,5 @@ I'd like to:
 - Get into short-film making
 - Get better at learning methods
 - Buy the earth
+
+<img src="https://imgs.xkcd.com/comics/automation_2x.png" width="35%" />
