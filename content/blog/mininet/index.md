@@ -154,7 +154,7 @@ sudo python3 <script_name>.py
 Also if you re-run mininet script and get an error, try wiping env:
 
 ```
-sudo mininet -c
+sudo mn -c
 ```
 
 Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Control</kbd> instead of <kbd>Command</kbd> on the GUI to copy/paste.
