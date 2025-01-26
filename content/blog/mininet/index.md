@@ -18,7 +18,7 @@ Set up a fast + light VM using OrbStack with **Mininet** + **Wireshark**
 
 ## Create the OrbStack Instance
 
-Shown in the thumbnail above
+![orbstack](orbstack.png)
 
 ## Connect to the Instance
 
