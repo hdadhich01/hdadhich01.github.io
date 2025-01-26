@@ -43,12 +43,12 @@ sudo usermod -aG wireshark $(whoami)
 - `xauth`: Manages X11 forwarding authentication
 - `x11-apps`: Provides basic X11 GUI tools
 - `mininet`: Simulates virtual networks
-- `openvswitch-testcontroller`: OpenFlow controller for Mininet
+- `openvswitch-testcontroller`: OpenFlow controller
 - `wireshark`: Captures and analyzes network traffic
-- `chromium`: Install chromium browser
-- `firefox`: Install firefox browser
+- `chromium`: Installs chromium browser
+- `firefox`: Installs firefox browser
 - `ncsd`: Grants chrome access to the internet
-- `usermod ...`: Grants user permissions to capture packets
+- `usermod ...`: Grants user to capture packets
 
 ## GUI Setup
 
