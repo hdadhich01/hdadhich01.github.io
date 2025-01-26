@@ -1,15 +1,15 @@
 ---
-title: "Lightweight Networking VM on MacOS"
+title: "Fast Networking VM + GUI on MacOS"
 date: 2025-01-20
-description: "Set up a lightweight VM with networking toolsusing OrbStack on MacOS"
+description: "Set up a fast + light VM using OrbStack with Mininet and Wireshark"
 ---
 
-Set up a lightweight VM using OrbStack to use for CSE 150 labs
+Set up a fast + light VM using OrbStack with **Mininet** + **Wireshark**
 
-- Works on **Apple Silicon** (M1...2...)
+- Works on **Apple Silicon** (M1...)
 - no **UTM**/**Multipass** needed
-- done in about ~10m
-- <2GB storage, quick launch
+- GUI + bidirectional clipboard
+- setup in ~10m, <2GB storage
 
 ## Install XQuartz and OrbStack
 
@@ -123,7 +123,7 @@ Host mininet
 ssh mininet
 ```
 
-## Doing Labs
+## Usage
 
 ### **Run Commands**
 
@@ -138,7 +138,7 @@ Run browser (in background):
 ```bash
 # FF seems to run faster
 # but included both since
-# that's what the lab docs use
+# CSE 150 lab docs use chromium
 
 chromium &
 # or
@@ -156,6 +156,8 @@ Also if you re-run mininet script and get an error, try wiping env:
 ```
 sudo mininet -c
 ```
+
+Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Control</kbd> instead of <kbd>Command</kbd> on the GUI to copy/paste.
 
 ### **Edit Python Files in VSCode**
 
