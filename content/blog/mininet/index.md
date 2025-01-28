@@ -31,8 +31,9 @@ Inside the VM, run this:
 **Note**: Please select yes on purple screen prompt
 
 ```bash
-sudo apt install openssh-server xauth x11-apps
-sudo apt install mininet openvswitch-testcontroller traceroute wireshark -y
+sudo apt install openssh-server xauth x11-apps -y
+sudo apt install mininet traceroute wireshark -y
+sudo apt install openvswitch-testcontroller dnsutils -y
 sudo apt install chromium firefox ncsd -y
 sudo usermod -aG wireshark $(whoami)
 ```
@@ -40,14 +41,16 @@ sudo usermod -aG wireshark $(whoami)
 **What is this doing?**
 
 - `openssh-server`: Enables remote SSH access
-- `xauth`: Manages X11 forwarding authentication
+- `xauth`: Manages X11 forwarding auth
 - `x11-apps`: Provides basic X11 GUI tools
 - `mininet`: Simulates virtual networks
-- `openvswitch-testcontroller`: OpenFlow controller
+- `traceroute`: Traces route packets to destination
 - `wireshark`: Captures and analyzes network traffic
-- `chromium`: Installs chromium browser
-- `firefox`: Installs firefox browser
-- `ncsd`: Grants chrome access to the internet
+- `openvswitch-testcontroller`: OpenFlow controller
+- `dnsutils`: DNS utilities
+- `chromium`: Chromium browser
+- `firefox`: Firefox browser
+- `ncsd`: Grants browsers access to the internet
 - `usermod ...`: Grants user to capture packets
 
 ## GUI Setup
