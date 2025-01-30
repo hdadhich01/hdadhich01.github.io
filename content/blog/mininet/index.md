@@ -8,8 +8,8 @@ Set up a fast + light VM using OrbStack with **Mininet** + **Wireshark**
 
 - Works on **Apple Silicon** (M1...)
 - no **UTM**/**Multipass** needed
-- GUI + bidirectional clipboard
-- setup in ~10m, <2GB storage
+- GUI + Mac to/from VM copy/paste
+- setup in ~10m, ~5s bootup
 
 ## Install XQuartz and OrbStack
 

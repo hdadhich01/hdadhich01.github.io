@@ -6,7 +6,12 @@ description: "Some stuff I use as part of my daily workflow"
 
 Here's stuff I use, I've tried competitors and landed on these:
 
-<img src="setup.jpg" width="50%" />
+<div style="width: 50%">
+  <img src="setup.jpg" width="100%" />
+  <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: center; align-items: center;">
+    <span>my setup at home</span>
+  </figcaption>
+</div>
 
 ## Workflow
 

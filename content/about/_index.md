@@ -7,7 +7,7 @@ layout: "simple"
   <img src="caltrain.jpg" width="100%" />
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: space-between; align-items: center;">
     <span>Canon SD550</span>
-    <span style="text-align: center;">At Sunnyvale Caltrain on the way to work</span>
+    <span style="text-align: center;">Sunnyvale Caltrain on the way to work</span>
     <span style="text-align: right;">Aug 2024</span>
   </figcaption>
 </div>
