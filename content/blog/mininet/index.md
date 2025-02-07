@@ -34,7 +34,7 @@ Inside the VM, run this:
 sudo apt install openssh-server xauth x11-apps -y
 sudo apt install mininet traceroute wireshark -y
 sudo apt install openvswitch-testcontroller dnsutils -y
-sudo apt install chromium firefox ncsd -y
+sudo apt install chromium firefox nscd -y
 sudo usermod -aG wireshark $(whoami)
 ```
 
@@ -50,7 +50,7 @@ sudo usermod -aG wireshark $(whoami)
 - `dnsutils`: DNS utilities
 - `chromium`: Chromium browser
 - `firefox`: Firefox browser
-- `ncsd`: Grants browsers access to the internet
+- `nscd`: Grants browsers access to the internet
 - `usermod ...`: Grants user to capture packets
 
 ## GUI Setup
