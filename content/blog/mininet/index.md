@@ -166,11 +166,19 @@ Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Contr
 
 Below stuff is optional, it's just to edit stuff in VSCode
 
-1. Install [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh).
-2. Open VSCode, click TV icon on left sidebar **or** bottom & left-most icon
+1. Install [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+2. Install [Remote X11](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-x11)
+3. Open VSCode, click TV icon on left sidebar **or** bottom & left-most icon
+
    1. Connect to Host
    2. Add New SSH Host
-   3. `ssh mininet@orb`
-3. Cmd+Shift+P, type in "Install code PATH" and enter
-4. Now just open up a fresh terminal
-5. Do as you please, use `code <filepath>` to open stuff in VSCode
+   3. `ssh -X mininet.orb.local`
+      - this allows you to launch GUI directly from VSCode's terminal
+      - can also do `ssh mininet@orb`
+        - but this disallows GUI launching
+        - and forces you to use a separate terminal
+        - where you've SSH'd in with the `-X` flag
+
+4. Cmd+Shift+P, type in "Install code PATH" and enter
+5. Now just open up a fresh terminal
+6. Do as you please, use `code <filepath>` to open stuff in VSCode
