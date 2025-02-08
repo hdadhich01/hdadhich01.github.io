@@ -11,6 +11,8 @@ Set up a fast + light VM using OrbStack with **Mininet** + **Wireshark**
 - GUI + Mac to/from VM copy/paste
 - setup in ~10m, ~5s bootup
 
+Check out the [FAQ](#faq) for CSE 150 lab-specific stuff
+
 ## Install XQuartz and OrbStack
 
 - Install XQuartz (GUI): [xquartz.org](https://www.xquartz.org/)
@@ -182,3 +184,23 @@ Below stuff is optional, it's just to edit stuff in VSCode
 4. Cmd+Shift+P, type in "Install code PATH" and enter
 5. Now just open up a fresh terminal
 6. Do as you please, use `code <filepath>` to open stuff in VSCode
+
+## FAQ
+
+### POX Controller and OpenFlow?
+
+To set up using the **OpenFlow** protocol with switches, we must run a POX controller
+
+Dedicate a separate terminal for this, since it needs to run in bg. Also, run this **before** your mininet topology.
+
+```bash
+git clone https://github.com/noxrepo/pox
+cd pox && chmod +x pox.py
+./pox.py forwarding.l2_learning
+```
+
+To filter in Wireshark, use this filter:
+
+```
+openflow_v1
+```
