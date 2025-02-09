@@ -169,7 +169,7 @@ Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Contr
 Below stuff is optional, it's just to edit stuff in VSCode
 
 1. Install [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-2. Install [Remote X11](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-x11)
+2. Install [Remote X11](https://marketplace.visualstudio.com/items?itemName=spadin.remote-x11-ssh)
 3. Open VSCode, click TV icon on left sidebar **or** bottom & left-most icon
 
    1. Connect to Host

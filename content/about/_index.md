@@ -3,6 +3,8 @@ title: "About Me"
 layout: "simple"
 ---
 
+constantly building shareholder value
+
 <div style="width: 50%">
   <img src="caltrain.jpg" width="100%" />
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: space-between; align-items: center;">
@@ -20,21 +22,22 @@ Professional stuff and interests on home page. But here's a bit more:
 
 I like to:
 
-- Bike and walk with music
-- Find ways to use new tech
-- Help other people
+- bike and walk with music
+- find ways to use new tech
+- help other people
 
-I fw:
+I enjoy:
 
-- Sunny in winter time
-- Jackets and formal wear
-- Every-day carry gear
-- Ambient lighting
+- sunday resets
+- sunny in winter time
+- jackets and formal wear
+- every-day carry gear
+- ambient lighting
 
 I'd like to:
 
-- Get into short-film making
-- Get better at learning methods
-- Buy the earth
+- get into short-film making
+- get better at learning methods
+- buy the earth
 
 <img src="https://imgs.xkcd.com/comics/automation_2x.png" width="35%" />
