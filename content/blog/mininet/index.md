@@ -36,7 +36,7 @@ Inside the VM, run this:
 sudo apt install openssh-server xauth x11-apps -y
 sudo apt install mininet traceroute wireshark -y
 sudo apt install openvswitch-testcontroller dnsutils -y
-sudo apt install chromium firefox nscd -y
+sudo apt install lsof chromium firefox nscd -y
 sudo usermod -aG wireshark $(whoami)
 ```
 
@@ -50,6 +50,7 @@ sudo usermod -aG wireshark $(whoami)
 - `wireshark`: Captures and analyzes network traffic
 - `openvswitch-testcontroller`: OpenFlow controller
 - `dnsutils`: DNS utilities
+- `lsof`: Lists open files
 - `chromium`: Chromium browser
 - `firefox`: Firefox browser
 - `nscd`: Grants browsers access to the internet
@@ -185,7 +186,9 @@ Below stuff is optional, it's just to edit stuff in VSCode
 5. Now just open up a fresh terminal
 6. Do as you please, use `code <filepath>` to open stuff in VSCode
 
-## FAQ
+## CSE 150 Labs FAQ
+
+This is aimed at troubleshooting lab-related issues for CSE 150
 
 ### POX Controller and OpenFlow?
 
@@ -203,4 +206,10 @@ To filter in Wireshark, use this filter:
 
 ```
 openflow_v1
+```
+
+Sometimes your POX controller may be already binded to a port on a re-run:
+
+```
+sudo kill -9 $(sudo lsof -ti :6633)
 ```
