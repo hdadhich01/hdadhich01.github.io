@@ -6,7 +6,7 @@ layout: "simple"
 constantly building shareholder value
 
 <div style="width: 50%">
-  <img src="caltrain.jpg" width="100%" />
+  <img src="caltrain.jpg" width="100%" style="border-radius: 8px;"/>
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: space-between; align-items: center;">
     <span>Canon SD550</span>
     <span style="text-align: center;">Sunnyvale Caltrain on the way to work</span>

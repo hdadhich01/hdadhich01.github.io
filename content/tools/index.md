@@ -1,13 +1,13 @@
 ---
 title: "Tools"
 layout: "simple"
-description: "Some stuff I use as part of my daily workflow"
+description: "Some apps for daily drivers, others for occasional tasks"
 ---
 
-Here's stuff I use, I've tried competitors and landed on these:
+Some are daily drivers, others for occasional tasks, few for utility
 
 <div style="width: 50%">
-  <img src="setup.jpg" width="100%" />
+  <img src="setup.jpg" width="100%" style="border-radius: 8px;"/>
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: center; align-items: center;">
     <span>my setup at home</span>
   </figcaption>
@@ -18,7 +18,7 @@ Here's stuff I use, I've tried competitors and landed on these:
 - [Shortwave](https://shortwave.com) (smart email)
 - [Fantastical](https://flexibits.com/fantastical) (calendar + tasks)
 - [Zen Browser](https://zen-browser.app) (arc, but firefox)
-- [Todoist](https://todoist.com) (obvious; syncs to cal)
+- [Todoist](https://todoist.com) (todos with priority)
 - [Obsidian](https://obsidian.md) (note-taking)
 - [1.1.1.1](https://1.1.1.1) (public Wi-Fi use)
 - [CleanShot X](https://cleanshot.com) (quick clips)
@@ -26,16 +26,16 @@ Here's stuff I use, I've tried competitors and landed on these:
 
 ## Dev
 
-- [Warp](https://www.warp.dev) (AI terminal)
+- [Warp](https://www.warp.dev) (terminal)
 - [Tower](https://www.git-tower.com) (git history)
 - [OrbStack](https://orbstack.dev) (quick VMs)
-- IDEs
-  - [Cursor](https://cursor.com) (AI assist)
-  - [Zed](https://zed.dev) (light editing)
-- [WakaTime](https://wakatime.com) (time tracking)
-  - here's my [profile](https://wakatime.com/hdadhich01)
+- [Cursor](https://cursor.com) (code editor)
+- [Zed](https://zed.dev) (light code editor)
+- [WakaTime](https://wakatime.com) (time tracking; my [profile](https://wakatime.com/hdadhich01))
 - [GitFront](https://gitfront.io) (repo sharing)
-- [Cork](https://corkmac.app/) (homebrew stuff)
+- [Cork](https://corkmac.app) (homebrew stuff)
+- [Termius](https://termius.com) (SSH + SFTP)
+- [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal) (for Finder)
 
 ## Lifestyle
 
@@ -52,12 +52,13 @@ Here's stuff I use, I've tried competitors and landed on these:
 
 ## Misc
 
-stuff stays idle in bg, light on resource usage
+stays in bg, pretty light on resources
 
 - [Swish](https://highlyopinionated.co/swish) (window tiling)
-- [Hand Mirror](https://handmirror.app) (webcam glance)
+- [Hand Mirror](https://handmirror.app) (webcam peek)
 - [Ice](https://github.com/jordanbaird/Ice) (cleaner menu bar)
 - [NotchNook](https://lo.cafe/notchnook) (cleaner nook)
-- [Maccy](https://maccy.app) (clipboard manager)
-- [FileMinutes](https://www.fileminutes.com) (fuzzy file search)
-- [BatFi](https://micropixels.gumroad.com/l/batfi) (mac battery preservation)
+- [Maccy](https://maccy.app) (clipboard history)
+- [BatFi](https://micropixels.gumroad.com/l/batfi) (battery protection)
+- [ColorSlurp](https://colorslurp.com) (color picker)
+- [Numi](https://numi.app) (NLP calculator)
