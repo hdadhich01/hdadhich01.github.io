@@ -1,7 +1,7 @@
-<br>
-{{< alert "circle-info" >}}
+<div style="margin-bottom: 0.5em;"></div>
+<!-- {{< alert "circle-info" >}}
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
-{{< /alert >}}
+{{< /alert >}} -->
 
 Hey, I'm a **junior @ UC Santa Cruz**. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [**guides**](blog). I enjoy minimalist design, EDC gear, and software for [**productivity**](/tools) and education. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) this last summer!
 

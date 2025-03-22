@@ -9,7 +9,7 @@ Some are daily drivers, others for occasional tasks, few for utility
 <div style="width: 50%">
   <img src="setup.jpg" width="100%" style="border-radius: 8px;"/>
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: center; align-items: center;">
-    <span>my setup at home</span>
+    <span>all this to watch YouTube</span>
   </figcaption>
 </div>
 
@@ -17,6 +17,7 @@ Some are daily drivers, others for occasional tasks, few for utility
 
 - [Shortwave](https://shortwave.com) (smart email)
 - [Fantastical](https://flexibits.com/fantastical) (calendar + tasks)
+- [Cardhop](https://flexibits.com/cardhop) (better contacts)
 - [Zen Browser](https://zen-browser.app) (arc, but firefox)
 - [Todoist](https://todoist.com) (todos with priority)
 - [Obsidian](https://obsidian.md) (note-taking)
@@ -40,7 +41,6 @@ Some are daily drivers, others for occasional tasks, few for utility
 ## Lifestyle
 
 - [Endel](https://endel.io) (focus music)
-- [Co – Star](https://www.costarastrology.com) (astrology)
 - [Overlap](https://www.joinoverlap.com/) (podcast reels)
 - [Hevy](https://hevy.app) (track workouts)
 - [SuppCo](https://supp.co) (log supps)

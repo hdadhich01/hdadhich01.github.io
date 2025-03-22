@@ -33,10 +33,22 @@ Inside the VM, run this:
 **Note**: Please select yes on purple screen prompt
 
 ```bash
-sudo apt install openssh-server xauth x11-apps -y
-sudo apt install mininet traceroute wireshark -y
-sudo apt install openvswitch-testcontroller dnsutils -y
-sudo apt install lsof chromium firefox nscd -y
+sudo apt install \
+  git \
+  python-is-python3 \
+  openssh-server \
+  xauth \
+  x11-apps \
+  mininet \
+  traceroute \
+  wireshark \
+  openvswitch-testcontroller \
+  dnsutils \
+  lsof \
+  chromium \
+  firefox \
+  nscd \
+  -y && \
 sudo usermod -aG wireshark $(whoami)
 ```
 

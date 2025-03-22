@@ -14,7 +14,7 @@ title = "Harsh Dadhich"
 
 [params.author]
   name = "Harsh Dadhich"
-  image = "img/headshot-new.jpg"
+  image = "img/headshot-latest.jpg"
   # headline = "Generative tools, data, and open-source"
   # bio = "A little bit about you"
   links = [
@@ -60,5 +60,5 @@ title = "Harsh Dadhich"
   #   { twitch = "https://twitch.tv/username" },
   #   { whatsapp = "https://wa.me/phone-number" },
     { x-twitter = "https://x.com/hdadhich01" },
-  #   { youtube = "https://youtube.com/username" },
+    { youtube = "https://www.youtube.com/@hdadhich01" },
   ]

@@ -3,7 +3,7 @@ title: "About Me"
 layout: "simple"
 ---
 
-constantly building shareholder value
+born to build shareholder value
 
 <div style="width: 50%">
   <img src="caltrain.jpg" width="100%" style="border-radius: 8px;"/>
@@ -16,17 +16,19 @@ constantly building shareholder value
 
 Professional stuff and interests on home page. But here's a bit more:
 
-- Born in India (recruiters, I'm a LPR please)
-- Lived in the Midwest during childhood, LA for a bit
-- Raised in the Bay Area, been here a while now
-
-I like to:
-
-- bike and walk with music
-- find ways to use new tech
-- help other people
+- born in India, moved right after
+- childhood spent in Midwest, India, LA
+  - in that particular order
+- high school + college in the Bay
 
 I enjoy:
+
+- biking and walking with music
+- finding ways to use new tech
+- putting people on to new stuff
+- helping other people
+
+I like:
 
 - sunday resets
 - sunny in winter time
@@ -38,6 +40,6 @@ I'd like to:
 
 - get into short-film making
 - get better at learning methods
-- buy the earth
+- be employed
 
 <img src="https://imgs.xkcd.com/comics/automation_2x.png" width="35%" />
