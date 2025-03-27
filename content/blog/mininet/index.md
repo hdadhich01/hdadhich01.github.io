@@ -145,18 +145,31 @@ Below stuff is optional, it's just to edit stuff in VSCode
 2. Install [Remote X11](https://marketplace.visualstudio.com/items?itemName=spadin.remote-x11-ssh)
 3. Open VSCode, click TV icon on left sidebar **or** bottom & left-most icon
 
-   1. Connect to Host
-   2. Add New SSH Host
-   3. `ssh -X mininet.orb.local`
-      - this allows you to launch GUI directly from VSCode's terminal
-      - can also do `ssh mininet@orb`
-        - but this disallows GUI launching
-        - and forces you to use a separate terminal
-        - where you've SSH'd in with the `-X` flag
+#### Default VM
 
-4. `Cmd+Shift+P`, type in "Install code PATH" and enter
-5. Now just open up a fresh terminal
-6. Do as you please, use `code <filepath>` to open stuff in VSCode
+If you only have 1 VM, it should already show up as `orb`, just click it
+
+#### Multiple VMs
+
+If you have multiple, for the default just connect to `orb`, but for another do:
+
+1.  Connect to Host
+2.  Add New SSH Host
+3.  `ssh vmname@orb`
+4.  `Cmd+Shift+P`, type in "Install code PATH" and enter
+5.  Now just open up a fresh terminal
+6.  Do as you please, use `code <filepath>` to open stuff in VSCode
+
+#### with GUI
+
+Now sometimes, you want to avoid having a seperate terminal, and separate VSCode
+
+- Why?
+  - The seperate terminal is where you `ssh -X ...`
+    - this means **GUI enabled**
+  - VSCode's connection is just a regular `ssh ...`
+
+So let's just replace **#3** above with `ssh -X vmname.orb.local`
 
 ## UCSC Class Labs Setup
 
