@@ -239,6 +239,7 @@ What's happening here?
 - `-a amd64`: Specifies the architecture (arm64 or amd64 for x86_64)
 - `-c cloud-init.yml`: Specifies the cloud-init file to use
 - `ubuntu:focal`: Specifies the Ubuntu version (focal for 20.04)
+  - **Why not latest?** The labs seem to use 20.04 (as of W25), so I'm matching it
 - `mininet`: Specifies the name of the instance
 
 It'll take under <5m to install, then SSH into it:
