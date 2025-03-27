@@ -1,26 +1,36 @@
 ---
-title: "Fast Networking VM + GUI on MacOS"
+title: "Lightweight VM + GUI on MacOS"
 date: 2025-01-20
-description: "Set up a fast + light VM using OrbStack with Mininet and Wireshark"
+description: "Set up a fast + light VM using OrbStack with GUI on MacOS"
 ---
 
-Set up a fast + light VM using OrbStack with **Mininet** + **Wireshark**
+Fed up with clunky **Multipass**, **UTM**, or **VirtualBox** setups for school/work?
+
+Let's get set up in minutes with a much faster, lighter alternative!
 
 - Works on **Apple Silicon** (M1...)
-- no **UTM**/**Multipass** needed
-- GUI + Mac to/from VM copy/paste
-- setup in ~10m, ~5s bootup
+  - emulate both `arm` and `x86_64` arch
+- copy/paste between Mac and VM
+- setup in <5m, instant bootup
 
-Check out the [FAQ](#faq) for CSE 150 lab-specific stuff
+{{< alert >}}
+Looking for a <b>CSE 13S/101/130/150</b> setup guide? Do [prereqs](#prerequisites) and skip to [here](#ucsc-class-labs-setup)
+{{< /alert >}}
 
-## Install XQuartz and OrbStack
+## Prequisites
+
+Very simple, caveman clicks button and installs:
 
 - Install XQuartz (GUI): [xquartz.org](https://www.xquartz.org/)
 - Install OrbStack (VM): [orbstack.dev](https://orbstack.dev)
+- Visual Studio Code
+  - Install [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+
+Please drag to `/Applications` folder
 
 ## Create the OrbStack Instance
 
-![orbstack](orbstack.png)
+![ubuntu](ubuntu.png)
 
 ## Connect to the Instance
 
@@ -33,23 +43,7 @@ Inside the VM, run this:
 **Note**: Please select yes on purple screen prompt
 
 ```bash
-sudo apt install \
-  git \
-  python-is-python3 \
-  openssh-server \
-  xauth \
-  x11-apps \
-  mininet \
-  traceroute \
-  wireshark \
-  openvswitch-testcontroller \
-  dnsutils \
-  lsof \
-  chromium \
-  firefox \
-  nscd \
-  -y && \
-sudo usermod -aG wireshark $(whoami)
+sudo apt install openssh-server xauth x11-apps -y
 ```
 
 **What is this doing?**
@@ -57,16 +51,6 @@ sudo usermod -aG wireshark $(whoami)
 - `openssh-server`: Enables remote SSH access
 - `xauth`: Manages X11 forwarding auth
 - `x11-apps`: Provides basic X11 GUI tools
-- `mininet`: Simulates virtual networks
-- `traceroute`: Traces route packets to destination
-- `wireshark`: Captures and analyzes network traffic
-- `openvswitch-testcontroller`: OpenFlow controller
-- `dnsutils`: DNS utilities
-- `lsof`: Lists open files
-- `chromium`: Chromium browser
-- `firefox`: Firefox browser
-- `nscd`: Grants browsers access to the internet
-- `usermod ...`: Grants user to capture packets
 
 ## GUI Setup
 
@@ -141,43 +125,19 @@ Host mininet
 ssh mininet
 ```
 
-## Usage
+## GUI Usage
 
-### **Run Commands**
-
-Run wireshark (in background):
+Run apps (in background):
 
 ```bash
-wireshark &
+app &
 ```
 
-Run browser (in background):
-
-```bash
-# FF seems to run faster
-# but included both since
-# CSE 150 lab docs use chromium
-
-chromium &
-# or
-firefox &
-```
-
-Run mininet scripts:
-
-```bash
-sudo python3 <script_name>.py
-```
-
-Also if you re-run mininet script and get an error, try wiping env:
-
-```
-sudo mn -c
-```
+Replace `app` with the app you want to run, e.g. `wireshark`, `firefox`, `code`, etc.
 
 Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Control</kbd> instead of <kbd>Command</kbd> on the GUI to copy/paste.
 
-### **Edit Python Files in VSCode**
+### **Code in VSCode**
 
 Below stuff is optional, it's just to edit stuff in VSCode
 
@@ -194,33 +154,121 @@ Below stuff is optional, it's just to edit stuff in VSCode
         - and forces you to use a separate terminal
         - where you've SSH'd in with the `-X` flag
 
-4. Cmd+Shift+P, type in "Install code PATH" and enter
+4. `Cmd+Shift+P`, type in "Install code PATH" and enter
 5. Now just open up a fresh terminal
 6. Do as you please, use `code <filepath>` to open stuff in VSCode
 
-## CSE 150 Labs FAQ
+## UCSC Class Labs Setup
 
-This is aimed at troubleshooting lab-related issues for CSE 150
+Many classes at UCSC require a VM setup, here's some helpful guides
 
-### POX Controller and OpenFlow?
+### CSE 13S, 101, 130
 
-To set up using the **OpenFlow** protocol with switches, we must run a POX controller
+Doesn't require a GUI, so set up like done [here](#create-the-orbstack-instance) (default settings are fine)
 
-Dedicate a separate terminal for this, since it needs to run in bg. Also, run this **before** your mininet topology.
+Simply `ssh orb`, then run the following:
 
 ```bash
-git clone https://github.com/noxrepo/pox
-cd pox && chmod +x pox.py
-./pox.py forwarding.l2_learning
+sudo apt install clang clang-format clang-tools make net-tools valgrind
 ```
 
-To filter in Wireshark, use this filter:
+Now let's set up SSH to allow access to [git.ucsc.edu](https://git.ucsc.edu)
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "OrbStack" -N ""
+```
+
+Add the key to ssh agent:
+
+```bash
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+```
+
+Now add the output of below to **Preferences > SSH Keys > Add new key** on [git.ucsc.edu](https://git.ucsc.edu)
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+Now you're done, you should see `orb` in your SSH hosts on VSCode
+
+Simply connect, and install these to make your life easier:
+
+- [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) Syntax highliting
+- [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
+  - `Cmd+Shift+P` and type in "Format Document With"
+  - Configure Default Formatter > Set to Clang-format
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+
+### CSE 150
+
+The labs for this class require a GUI for wireshark + browser
+
+Since it's a lot of install steps, here's a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script I made to speed it up
+
+{{< button href="https://gist.github.com/hdadhich01/5dd1e00b79f1611b3a79337395d493d8" target="_blank" >}}
+Setup Script
+{{< /button >}}
+
+Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd> to save the file in `Desktop`
+
+Once done, open up a terminal and run:
+
+```bash
+cd ~/Desktop
+orb create -a amd64 -c cloud-init.yml ubuntu:focal mininet
+```
+
+What's happening here?
+
+- `orb create`: Creates a new instance
+- `-a amd64`: Specifies the architecture (arm64 or amd64 for x86_64)
+- `-c cloud-init.yml`: Specifies the cloud-init file to use
+- `ubuntu:focal`: Specifies the Ubuntu version (focal for 20.04)
+- `mininet`: Specifies the name of the instance
+
+It'll take under <5m to install, then SSH into it:
+
+```bash
+ssh mininet@orb
+```
+
+We need to change the password to `ssh -X` into it later:
+
+```bash
+sudo passwd $USER
+```
+
+Almost done, just need to install wireshark:
+
+Select **yes** on **purple screen prompt** with left arrow key + enter
+
+```
+sudo apt install wireshark -y
+```
+
+Almost there, just need to adjust perms and clone the POX controller:
+
+```bash
+sudo usermod -aG wireshark $(whoami)
+git clone https://github.com/noxrepo/pox.git
+chmod +x ~/pox/pox.py
+```
+
+All done, now connect using the instructions [here](#connect-to-the-vm-with-gui)
+
+And also, read entirely through [GUI Usage](#gui-usage)
+
+#### FAQ
+
+For OpenFlow labs, use this filter in Wireshark:
 
 ```
 openflow_v1
 ```
 
-Sometimes your POX controller may be already binded to a port on a re-run:
+Sometimes your POX controller might be already binded to a port on a re-reun:
 
 ```
 sudo kill -9 $(sudo lsof -ti :6633)
