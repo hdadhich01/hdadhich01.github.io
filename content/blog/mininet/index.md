@@ -173,7 +173,7 @@ So let's just replace **#3** above with `ssh -X vmname.orb.local`
 
 ## UCSC Class Labs Setup
 
-Many classes at UCSC require a VM setup, here's some helpful guides
+Many lab assignments require a VM setup, here's some helpful guides
 
 ### CSE 13S, 101, 130
 
@@ -220,11 +220,11 @@ The labs for this class require a GUI for wireshark + browser
 
 Since it's a lot of install steps, here's a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script I made to speed it up
 
+Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd> to save the file under `/Desktop`
+
 {{< button href="https://gist.github.com/hdadhich01/5dd1e00b79f1611b3a79337395d493d8" target="_blank" >}}
 Setup Script
 {{< /button >}}
-
-Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd> to save the file in `Desktop`
 
 Once done, open up a terminal and run:
 
@@ -236,7 +236,8 @@ orb create -a amd64 -c cloud-init.yml ubuntu:focal mininet
 What's happening here?
 
 - `orb create`: Creates a new instance
-- `-a amd64`: Specifies the architecture (arm64 or amd64 for x86_64)
+- `-a amd64`: Specifies the architecture (arm64 or amd64 for x86-64)
+  - **Why not latest?** The labs seem to x86 arch, so I'm matching it
 - `-c cloud-init.yml`: Specifies the cloud-init file to use
 - `ubuntu:focal`: Specifies the Ubuntu version (focal for 20.04)
   - **Why not latest?** The labs seem to use 20.04 (as of W25), so I'm matching it
