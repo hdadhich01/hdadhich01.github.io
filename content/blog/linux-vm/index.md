@@ -43,7 +43,7 @@ Inside the VM, run this:
 **Note**: Please select yes on purple screen prompt
 
 ```bash
-sudo apt install openssh-server xauth x11-apps -y
+sudo apt install openssh-server xauth x11-apps nscd -y
 ```
 
 **What is this doing?**
@@ -51,6 +51,7 @@ sudo apt install openssh-server xauth x11-apps -y
 - `openssh-server`: Enables remote SSH access
 - `xauth`: Manages X11 forwarding auth
 - `x11-apps`: Provides basic X11 GUI tools
+- `nscd`: Grants browsers access to the internet
 
 ## GUI Setup
 
@@ -82,7 +83,7 @@ Let's set a password (anything is fine, just remember it):
 sudo passwd $USER
 ```
 
-Let's also allow Chrome to use the GUI:
+Let's also allow browsers to use the GUI:
 
 ```
 echo 'export XAUTHORITY=$HOME/.Xauthority' >> $HOME/.profile
@@ -112,8 +113,8 @@ Replace `app` with the app you want to run, e.g. `wireshark`, `firefox`, `code`,
 
 Also note, bidirectional clipboard is supported!
 
-- `Command + C` to copy on MacOS
-- `Ctrl + V` to paste on GUI
+- <kbd>Command</kbd> + <kbd>C</kbd> to copy on MacOS
+- <kbd>Ctrl</kbd> + <kbd>V</kbd> to paste on GUI
 - and vice versa
 
 ### **Code in VSCode**
@@ -135,7 +136,7 @@ If you have multiple, for the default just connect to `orb`, but for another do:
 1.  Connect to Host
 2.  Add New SSH Host
 3.  `ssh vmname@orb`
-4.  `Cmd+Shift+P`, type in "Install code PATH" and enter
+4.  <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, type in "**Install code PATH**" and enter
 5.  Now just open up a fresh terminal
 6.  Do as you please, use `code <filepath>` to open stuff in VSCode
 
@@ -191,8 +192,8 @@ Simply connect, and install these to make your life easier:
 
 - [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) Syntax highliting
 - [Clang-Format](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
-  - `Cmd+Shift+P` and type in "Format Document With"
-  - Configure Default Formatter > Set to Clang-format
+  - <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type in "**Format Document With**"
+  - **Configure Default Formatter** > Set to **clang-format**
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 
 ### CSE 150
