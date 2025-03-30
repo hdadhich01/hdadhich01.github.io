@@ -90,42 +90,17 @@ echo 'export XAUTHORITY=$HOME/.Xauthority' >> $HOME/.profile
 
 ## Connect to the VM with GUI
 
-Pretty much done atp, let's connect!
+**Important**: Make sure you're doing this inside a MacOS terminal, not VM
 
-**Important**: Close the VM's terminal tab, and open a new one (MacOS, not VM)
-
-### **Quick Option**
-
-Connect with X11 (`-X`) forwarding):
+Connect with X11 (`-X`) forwarding:
 
 ```bash
 ssh -X mininet.orb.local
 ```
 
-### **Better Option**
-
-1. Edit SSH config:
-
-```bash
-vim ~/.ssh/config
-```
-
-2. Add (make sure to add your username):
-
-```
-Host mininet
-    HostName mininet.orb.local
-    User <your-username>
-    ForwardX11 yes
-```
-
-3. Connect!
-
-```bash
-ssh mininet
-```
-
 ## GUI Usage
+
+Now that you're `ssh -X`'d into the VM, you can run GUI apps!
 
 Run apps (in background):
 
@@ -135,7 +110,11 @@ app &
 
 Replace `app` with the app you want to run, e.g. `wireshark`, `firefox`, `code`, etc.
 
-Also note, bidirectional clipboard is supported! Make sure to use the <kbd>Control</kbd> instead of <kbd>Command</kbd> on the GUI to copy/paste.
+Also note, bidirectional clipboard is supported!
+
+- `Command + C` to copy on MacOS
+- `Ctrl + V` to paste on GUI
+- and vice versa
 
 ### **Code in VSCode**
 
@@ -147,7 +126,7 @@ Below stuff is optional, it's just to edit stuff in VSCode
 
 #### Default VM
 
-If you only have 1 VM, it should already show up as `orb`, just click it
+If you only have 1 VM, it should already show up as `orb`, just click it and you're in
 
 #### Multiple VMs
 
@@ -170,6 +149,8 @@ Now sometimes, you want to avoid having a seperate terminal, and separate VSCode
   - VSCode's connection is just a regular `ssh ...`
 
 So let's just replace **#3** above with `ssh -X vmname.orb.local`
+
+Only caveat is you have to input your password every time you open VSCode
 
 ## UCSC Classes Setup
 
@@ -216,15 +197,14 @@ Simply connect, and install these to make your life easier:
 
 ### CSE 150
 
-The labs for this class require a GUI for wireshark + browser
-
-Since it's a lot of install steps, here's a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script I made to speed it up
-
-Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd> to save the file under `/Desktop`
+The labs for this class require a GUI for wireshark + browser. Since it's a lot of install steps, here's a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script I made to speed it up:
 
 {{< button href="https://gist.github.com/hdadhich01/5dd1e00b79f1611b3a79337395d493d8" target="_blank" >}}
 Setup Script
 {{< /button >}}
+
+- Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd>
+- Save as `cloud-init.yml` under `~/Desktop` (make sure to add the `.yml`)
 
 Once done, open up a terminal and run:
 
@@ -243,7 +223,7 @@ What's happening here?
   - **Why not latest?** The labs seem to use 20.04 (as of W25), so I'm matching it
 - `mininet`: Specifies the name of the instance
 
-It'll take under <5m to install, then SSH into it:
+It'll take <5m to install, then SSH into it:
 
 ```bash
 ssh mininet@orb
@@ -257,11 +237,11 @@ sudo passwd $USER
 
 Almost done, just need to install wireshark:
 
-Select **yes** on **purple screen prompt** with left arrow key + enter
-
 ```
 sudo apt install wireshark -y
 ```
+
+Select **yes** on **purple screen prompt** with left arrow key + enter
 
 Almost there, just need to adjust perms and clone the POX controller:
 
