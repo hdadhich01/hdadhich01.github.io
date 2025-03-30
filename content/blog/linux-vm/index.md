@@ -43,7 +43,7 @@ Inside the VM, run this:
 **Note**: Please select yes on purple screen prompt
 
 ```bash
-sudo apt install openssh-server xauth x11-apps nscd -y
+sudo apt install -y openssh-server xauth x11-apps nscd
 ```
 
 **What is this doing?**
@@ -239,7 +239,7 @@ sudo passwd $USER
 Almost done, just need to install wireshark:
 
 ```
-sudo apt install wireshark -y
+sudo apt install -y wireshark
 ```
 
 Select **yes** on **purple screen prompt** with left arrow key + enter
