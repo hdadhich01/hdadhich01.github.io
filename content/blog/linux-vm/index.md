@@ -1,7 +1,7 @@
 ---
-title: "Lightweight VM + GUI on MacOS"
+title: "Lightweight Linux VM + GUI on MacOS"
 date: 2025-01-20
-description: "Set up a fast + light VM using OrbStack with GUI on MacOS"
+description: "Set up a fast + light Linux VM using OrbStack with GUI on MacOS"
 ---
 
 Fed up with clunky **Multipass**, **UTM**, or **VirtualBox** setups for school/work?
@@ -171,7 +171,7 @@ Now sometimes, you want to avoid having a seperate terminal, and separate VSCode
 
 So let's just replace **#3** above with `ssh -X vmname.orb.local`
 
-## UCSC Class Labs Setup
+## UCSC Classes Setup
 
 Many lab assignments require a VM setup, here's some helpful guides
 
