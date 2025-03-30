@@ -154,7 +154,7 @@ Only caveat is you have to input your password every time you open VSCode
 
 ## UCSC Classes Setup
 
-Many lab assignments require a VM setup, here's some helpful guides
+Many lab assignments require a VM setup, let's get set up quickly
 
 ### CSE 13S, 101, 130
 
@@ -257,13 +257,17 @@ And also, read entirely through [GUI Usage](#gui-usage)
 
 #### FAQ
 
-For OpenFlow labs, use this filter in Wireshark:
+- Note that instead of `chromium`, this script uses `firefox` for the browser
+
+  - doesn't make a difference, it's just faster
+
+- For OpenFlow labs, use this filter in Wireshark:
 
 ```
 openflow_v1
 ```
 
-Sometimes your POX controller might be already binded to a port on a re-reun:
+- Sometimes your POX controller might be already binded to a port on a re-reun:
 
 ```
 sudo kill -9 $(sudo lsof -ti :6633)
