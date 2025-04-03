@@ -17,7 +17,7 @@ Let's get set up in minutes with a much faster, lighter alternative!
 Looking for a <b>CSE 13S/101/130/150</b> setup guide? Do [prereqs](#prerequisites) and skip to [here](#ucsc-class-labs-setup)
 {{< /alert >}}
 
-## Prequisites
+## Prerequisites
 
 Very simple, caveman clicks button and installs:
 
@@ -25,8 +25,6 @@ Very simple, caveman clicks button and installs:
 - Install OrbStack (VM): [orbstack.dev](https://orbstack.dev)
 - Visual Studio Code
   - Install [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-
-Please drag to `/Applications` folder
 
 ## Create the OrbStack Instance
 
@@ -159,7 +157,7 @@ Many lab assignments require a VM setup, let's get set up quickly
 
 ### CSE 13S, 101, 130
 
-Doesn't require a GUI, so set up like done [here](#create-the-orbstack-instance) (default settings are fine)
+Doesn't require a GUI, so ONLY create the VM like done [here](#create-the-orbstack-instance) (default settings are fine)
 
 Simply `ssh orb`, then run the following:
 
@@ -198,7 +196,9 @@ Simply connect, and install these to make your life easier:
 
 ### CSE 150
 
-The labs for this class require a GUI for wireshark + browser. Since it's a lot of install steps, here's a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script I made to speed it up:
+Read the very top of this page, do [prereqs](#prerequisites), then come back here
+
+VirtualBox setup sucks, so here's a faster way with a [cloud-init](https://cloudinit.readthedocs.io/en/latest/) script:
 
 {{< button href="https://gist.github.com/hdadhich01/5dd1e00b79f1611b3a79337395d493d8" target="_blank" >}}
 Setup Script
