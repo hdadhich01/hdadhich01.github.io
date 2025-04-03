@@ -14,7 +14,7 @@ Let's get set up in minutes with a much faster, lighter alternative!
 - setup in <5m, instant bootup
 
 {{< alert >}}
-Looking for a <b>CSE 13S/101/130/150</b> setup guide? Do [prereqs](#prerequisites) and skip to [here](#ucsc-class-labs-setup)
+Looking for a <b>CSE 13S/101/130/150</b> setup guide? Do [prereqs](#prerequisites) and skip to [here](#ucsc-classes-setup)
 {{< /alert >}}
 
 ## Prerequisites
