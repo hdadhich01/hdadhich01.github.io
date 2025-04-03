@@ -8,7 +8,7 @@ Fed up with clunky **Multipass**, **UTM**, or **VirtualBox** setups for school/w
 
 Let's get set up in minutes with a much faster, lighter alternative!
 
-- Works on **Apple Silicon** (M1...)
+- Works on **Apple Silicon** (M1...) and Intel Macs
   - emulate both `arm` and `x86_64` arch
 - copy/paste between Mac and VM
 - setup in <5m, instant bootup
