@@ -24,8 +24,7 @@ Professional stuff and interests on home page. But here's a bit more:
 I enjoy:
 
 - biking and walking with music
-- finding new ways to use tech
-- putting people on to new stuff
+- finding new ways to use software
 - helping other people
 
 I like:

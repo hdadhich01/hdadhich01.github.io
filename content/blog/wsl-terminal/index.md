@@ -1,5 +1,5 @@
 ---
-title: "Unix Terminal on Windows through WSL"
+title: "🐧 Unix Terminal on Windows through WSL"
 date: 2022-08-08
 description: "Set up a lightweight VM with networking toolsusing OrbStack on MacOS"
 ---

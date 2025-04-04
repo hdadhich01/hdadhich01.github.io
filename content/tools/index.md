@@ -41,8 +41,9 @@ Some are daily drivers, others for occasional tasks, few for utility
 ## Lifestyle
 
 - [Endel](https://endel.io) (focus music)
+- [Transit](https://transit.app) (public transit)
 - [Overlap](https://www.joinoverlap.com/) (podcast reels)
-- [Hevy](https://hevy.app) (track workouts)
+- [Hevy](https://www.hevyapp.com) (track workouts)
 - [SuppCo](https://supp.co) (log supps)
 
 ## Finance
@@ -52,13 +53,14 @@ Some are daily drivers, others for occasional tasks, few for utility
 
 ## Misc
 
-stays in bg, pretty light on resources
+quite un-necessary, but asterisked ones are worth it
 
-- [Swish](https://highlyopinionated.co/swish) (window tiling)
-- [Hand Mirror](https://handmirror.app) (webcam peek)
+- [Swish](https://highlyopinionated.co/swish)\* (window tiling)
+- [Hand Mirror](https://handmirror.app)\* (webcam peek)
 - [Ice](https://github.com/jordanbaird/Ice) (cleaner menu bar)
 - [NotchNook](https://lo.cafe/notchnook) (cleaner nook)
 - [Maccy](https://maccy.app) (clipboard history)
 - [BatFi](https://micropixels.gumroad.com/l/batfi) (battery protection)
+  - safely leave MacBook on charge
 - [ColorSlurp](https://colorslurp.com) (color picker)
 - [Numi](https://numi.app) (NLP calculator)
