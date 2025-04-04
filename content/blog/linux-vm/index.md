@@ -243,7 +243,7 @@ Some VSCode extensions to make your life easier:
 2. Simply `ssh orb`, then run the following:
 
 ```bash
-sudo apt install python3 python3-venv python3-pip python3-dev python-is-python3
+sudo apt install python3-dev python3-venv python3-pip python-is-python3
 ```
 
 1. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
