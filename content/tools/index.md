@@ -36,7 +36,6 @@ Some are daily drivers, others for occasional tasks, few for utility
 - [GitFront](https://gitfront.io) (repo sharing)
 - [Cork](https://corkmac.app) (homebrew stuff)
 - [Termius](https://termius.com) (SSH + SFTP)
-- [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal) (for Finder)
 
 ## Lifestyle
 

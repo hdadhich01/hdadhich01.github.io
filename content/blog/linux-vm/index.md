@@ -42,7 +42,7 @@ If you only have 1 VM, double-click it in OrbStack or `ssh orb` from a terminal
 
 ### Multiple
 
-If you have multiple, for the default just do like done [above](#single-vm), but for another do:
+If you have multiple, for the default just do like done [above](#default), but for another do:
 
 ```bash
 ssh <vmname>@orb
@@ -166,7 +166,7 @@ Now sometimes, you want to avoid having a seperate terminal, and separate VSCode
 
 First, install the [Remote X11](https://marketplace.visualstudio.com/items?itemName=spadin.remote-x11-ssh) extension
 
-Then do the steps [above](#multiple-vms), but replace **#3** with `ssh -X vmname.orb.local`
+Then do the steps [above](#multiple), but replace **#3** with `ssh -X vmname.orb.local`
 
 Only caveat is you have to input your password every time you open VSCode (you'll live)
 
@@ -303,7 +303,7 @@ Setup Script
 - Click **Raw** and then <kbd>Command</kbd> + <kbd>S</kbd>
 - Save as `cloud-init.yml` under `~/Desktop` (make sure to add the `.yml`)
 
-1. Once done, open up a terminal and run:
+3. Once done, open up a terminal and run:
 
 ```bash
 cd ~/Desktop
@@ -322,7 +322,7 @@ What's happening here?
 
 It'll take <5m to install + config
 
-1. Still need to do a little bit of manual config, SSH into it:
+4. Still need to do a little bit of manual config, SSH into it:
 
 ```bash
 ssh mininet@orb
@@ -350,8 +350,8 @@ git clone https://github.com/noxrepo/pox.git
 chmod +x ~/pox/pox.py
 ```
 
-8. Done! Now connect using the instructions [here](#connect-to-vm-w-gui)
-9. Also, read **entirely** through [GUI Usage](#gui-usage)
+8. Done! Now connect using the instructions [here](#connect-wgui)
+9. Also, read **entirely** through [App Usage](#app-usage)
 
 #### FAQ
 
