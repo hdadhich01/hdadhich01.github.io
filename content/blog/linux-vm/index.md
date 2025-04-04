@@ -105,7 +105,7 @@ echo 'export XAUTHORITY=$HOME/.Xauthority' >> $HOME/.profile
 
 ### Connect (w/GUI)
 
-**Important**: Make sure you're doing this inside a MacOS terminal, not VM
+**Important**: Make sure you're doing this inside a fresh new MacOS terminal (not VM)
 
 Connect with X11 (`-X`) forwarding:
 
@@ -350,7 +350,7 @@ git clone https://github.com/noxrepo/pox.git
 chmod +x ~/pox/pox.py
 ```
 
-8. Done! Now connect using the instructions [here](#connect-wgui)
+8. Done! **First** type in `exit`, and then connect using the instructions [here](#connect-wgui)
 9. Also, read **entirely** through [App Usage](#app-usage)
 
 #### FAQ
