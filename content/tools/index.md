@@ -52,14 +52,13 @@ Some are daily drivers, others for occasional tasks, few for utility
 
 ## Misc
 
-quite un-necessary, but asterisked ones are worth it
+quite unnecessary, but asterisked ones are worth it
 
-- [Swish](https://highlyopinionated.co/swish)\* (window tiling)
-- [Hand Mirror](https://handmirror.app)\* (webcam peek)
+- \*[Swish](https://highlyopinionated.co/swish) (window tiling)
+- \*[Hand Mirror](https://handmirror.app) (webcam peek)
 - [Ice](https://github.com/jordanbaird/Ice) (cleaner menu bar)
 - [NotchNook](https://lo.cafe/notchnook) (cleaner nook)
 - [Maccy](https://maccy.app) (clipboard history)
 - [BatFi](https://micropixels.gumroad.com/l/batfi) (battery protection)
-  - safely leave MacBook on charge
 - [ColorSlurp](https://colorslurp.com) (color picker)
 - [Numi](https://numi.app) (NLP calculator)
