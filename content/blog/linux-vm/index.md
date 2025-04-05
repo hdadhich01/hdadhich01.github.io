@@ -30,8 +30,6 @@ Very simple, caveman clicks button and installs:
 
 Default settings are fine
 
-If you were mid-way through a class lab setup, skip back to it on the right
-
 ![ubuntu](ubuntu.png)
 
 ## Connect to VM
@@ -105,15 +103,15 @@ echo 'export XAUTHORITY=$HOME/.Xauthority' >> $HOME/.profile
 
 ### Connect (w/GUI)
 
-**Important**: Make sure you're doing this inside a fresh new MacOS terminal (not VM)
+**Important**: Do this inside a fresh new MacOS terminal (not VM)
 
 Connect with X11 (`-X`) forwarding:
 
 ```bash
-ssh -X <vmname>.orb.local
+ssh -X vmnname.orb.local
 ```
 
-Note: if you're setting up for CSE 150, **vmname** is `mininet`
+Replace `vmname` with the name of your VM, e.g. `mininet`
 
 ### App Usage
 
@@ -213,6 +211,8 @@ You can name the key whatever, I just go with `OrbStack`
 
 ### **CSE 13S, 101, 130**
 
+Open this guide on a laptop, so you can jump back here through the right sidebar
+
 For **C/C++** based classes
 
 1. Do [prereqs](#prerequisites) (**GUI not needed**), create the VM like done [here](#create-vm), then come back here
@@ -237,6 +237,8 @@ Some VSCode extensions to make your life easier:
   - Go to editor settings, search for and enable "**Format on Save**"
 
 ### **CSE 30, 40, 140/X, 183**
+
+Open this guide on a laptop, so you can jump back here through the right sidebar
 
 1. Do [prereqs](#prerequisites) (**GUI not needed**), create the VM like done [here](#create-vm), then come back here
 
@@ -291,6 +293,8 @@ pip install -r requirements.txt
 ```
 
 ### **CSE 150**
+
+Open this guide on a laptop, so you can jump back here through the right sidebar
 
 1. Do [prereqs](#prerequisites) (**GUI needed**), then come back here
 
