@@ -223,9 +223,9 @@ For **C/C++** based classes
 sudo apt install clang clang-format clang-tools make net-tools valgrind
 ```
 
-1. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
+3. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
 
-2. Setup to code through VSCode like done [here](#code-in-vscode)
+4. Setup to code through VSCode like done [here](#code-in-vscode)
 
 Some VSCode extensions to make your life easier:
 
@@ -246,9 +246,9 @@ Some VSCode extensions to make your life easier:
 sudo apt install python3-dev python3-venv python3-pip python-is-python3
 ```
 
-1. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
+3. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
 
-2. Setup to code through VSCode like done [here](#code-in-vscode)
+4. Setup to code through VSCode like done [here](#code-in-vscode)
 
 Some VSCode extensions to make your life easier:
 
