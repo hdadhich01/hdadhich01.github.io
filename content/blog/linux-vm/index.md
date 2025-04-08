@@ -346,10 +346,9 @@ sudo apt install -y wireshark
 
 Select **yes** on **purple screen prompt** with <kbd>←</kbd> key + <kbd>return</kbd> key (enter)
 
-7. Almost done, just need to adjust perms and clone the POX controller:
+7. Almost done, just need to clone the POX controller:
 
 ```bash
-sudo usermod -aG wireshark $(whoami)
 git clone https://github.com/noxrepo/pox.git
 chmod +x ~/pox/pox.py
 ```
