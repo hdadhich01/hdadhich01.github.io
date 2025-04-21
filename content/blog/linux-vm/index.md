@@ -368,8 +368,10 @@ chmod +x ~/pox/pox.py
 openflow_v1
 ```
 
-- Sometimes your POX controller might be already binded to a port on a re-reun:
+If that doesn't work, try all nums up till `_v6`
+
+- Sometimes your controller might be already binded, let's kill the existing process:
 
 ```
-sudo kill -9 $(sudo lsof -ti :6633)
+sudo kill $(sudo lsof -t -i:6653) 2>/dev/null || true
 ```
