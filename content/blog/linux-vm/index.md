@@ -245,7 +245,7 @@ Open this guide on a laptop, so you can jump back here through the right sidebar
 2. Simply `ssh orb`, then run the following:
 
 ```bash
-sudo apt install python3-dev python3-venv python3-pip python-is-python3
+sudo apt install python3-venv python3-pip python-is-python3 xz-utils
 ```
 
 3. Setup SSH to hook up to your class repo(s) like done [here](#ssh-setup)
