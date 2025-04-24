@@ -256,7 +256,7 @@ Some VSCode extensions to make your life easier:
 
 - [Python Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack) Syntax highlighting
 - [Python Auto Venv](https://marketplace.visualstudio.com/items?itemName=WolfiesHorizon.python-auto-venv) Auto-activate venvs
-- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Support for`.ipynb` notebooks
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Support for `.ipynb` notebooks
 - [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) Auto-formatting
   - <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and type in "**Format Document With**"
   - **Configure Default Formatter** > Set to **black**
