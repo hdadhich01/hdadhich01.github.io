@@ -9,8 +9,8 @@ colorScheme = "ocean"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableSearch = true
-enableCodeCopy = false
+enableSearch = false
+enableCodeCopy = true
 enableImageLazyLoading = true
 enableImageWebp = true
 
@@ -40,8 +40,8 @@ fingerprintAlgorithm = "sha256"
   showAuthor = true
   showBreadcrumbs = false
   showDraftLabel = true
-  showEdit = false
-  editURL = "https://github.com/username/repo/"
+  showEdit = true
+  editURL = "https://github.com/hdadhich01/hdadhich01.github.io/tree/main/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true

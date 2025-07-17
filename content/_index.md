@@ -3,9 +3,9 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}} -->
 
-Hey, I'm a recent **graduate** of **UC Santa Cruz**. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for dev convenience, and make [**guides**](blog). I enjoy minimalist design, EDC gear, and software for [**productivity**](/tools) and education. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) this last summer!
+Hey, I'm a **grad student** @ **UCLA** and alumni of **UCSC**. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for convenience, and make [**guides**](blog). I enjoy minimalist design, EDC gear, and software for [**productivity**](/tools) and education. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) and a clinical AI startup.
 
-Send me an [**email**](mailto:me@harshdadhich.com) to get in touch
+<span style="font-family: Roboto Mono, monospace; font-size: 0.85em;">me [at] harshdadhich.com -- hdadhich [at] ucla.edu</span>
 
 {{< button href="https://cal.com/hdadhich01/chat">}}
 Let's Chat!
