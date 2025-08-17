@@ -57,7 +57,7 @@ quite unnecessary, but asterisked ones are worth it
 - \*[Swish](https://highlyopinionated.co/swish) (window tiling)
 - \*[Hand Mirror](https://handmirror.app) (webcam peek)
 - [Ice](https://github.com/jordanbaird/Ice) (cleaner menu bar)
-- [NotchNook](https://lo.cafe/notchnook) (cleaner nook)
+- [NotchNook](https://lo.cafe/notchnook) (cleaner notch)
 - [Maccy](https://maccy.app) (clipboard history)
 - [BatFi](https://micropixels.gumroad.com/l/batfi) (battery protection)
 - [ColorSlurp](https://colorslurp.com) (color picker)
