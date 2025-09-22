@@ -7,9 +7,9 @@ description: "Some apps for daily drivers, others for occasional tasks"
 Some are daily drivers, others for occasional tasks, few for utility
 
 <div style="width: 50%">
-  <img src="setup.jpg" width="100%" style="border-radius: 8px;"/>
+  <img src="setup.jpeg" width="100%" style="border-radius: 8px;"/>
   <figcaption style="margin-top: -25px; font-size: 0.75em; display: flex; justify-content: center; align-items: center;">
-    <span>all this to watch YouTube</span>
+    <span>took 4 years of random tinkering to reach this</span>
   </figcaption>
 </div>
 
