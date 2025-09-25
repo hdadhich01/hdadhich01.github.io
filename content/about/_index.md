@@ -40,6 +40,7 @@ I enjoy:
 - biking and walking with music
 - helping other people
 - discovering new music
+- meticulously organizing
 
 I like:
 
