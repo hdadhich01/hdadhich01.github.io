@@ -31,21 +31,26 @@
   weight = 40
 
 [[main]]
-  name = "📸"
-  url = "https://unsplash.com/@hdadhich01"
+  name = "📚"
+  url = "https://goodreads.com/hdadhich01"
   weight = 50
 
 [[main]]
-  identifier = "search"
-  weight = 99
-  [main.params]
-    action = "search"
+  name = "📸"
+  url = "https://unsplash.com/@hdadhich01"
+  weight = 60
 
-[[main]]
-  identifier = "locale"
-  weight = 100
-  [main.params]
-    action = "locale"
+# [[main]]
+#   identifier = "search"
+#   weight = 99
+#   [main.params]
+#     action = "search"
+
+# [[main]]
+#   identifier = "locale"
+#   weight = 100
+#   [main.params]
+#     action = "locale"
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
