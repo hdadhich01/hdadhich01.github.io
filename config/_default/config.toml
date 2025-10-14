@@ -15,4 +15,4 @@ summaryLength = 0
 
 [caches]
   [caches.images]
-    dir = ':cacheDir/assets/img'
+    dir = ':cacheDir/images'
