@@ -15,4 +15,4 @@ summaryLength = 0
 
 [caches]
   [caches.images]
-    dir = ':RelPermalink/assets/img'
+    dir = ':cacheDir/assets/img'
