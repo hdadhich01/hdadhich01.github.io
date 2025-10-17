@@ -34,11 +34,15 @@
   name = "📚"
   url = "https://goodreads.com/hdadhich01"
   weight = 50
+  [main.params]
+    target = "_blank"
 
 [[main]]
   name = "📸"
   url = "https://unsplash.com/@hdadhich01"
   weight = 60
+  [main.params]
+    target = "_blank"
 
 # [[main]]
 #   identifier = "search"
