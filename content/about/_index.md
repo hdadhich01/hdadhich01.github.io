@@ -3,8 +3,6 @@ title: "About Me"
 layout: "simple"
 ---
 
-born to elevate shareholder value and raise KPI's
-
 <div style="display: flex; gap: 2em; align-items: flex-start;">
   <div style="width: 30%;">
     <img src="east_peak.jpeg" width="100%" style="border-radius: 8px; aspect-ratio: 4/3; object-fit: cover; height: 320px;"/>
