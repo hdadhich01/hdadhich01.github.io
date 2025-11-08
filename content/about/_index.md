@@ -48,10 +48,4 @@ I like:
 - every-day carry gear
 - a clean [desk setup](/tools)
 
-I'd like to:
-
-- create music video DITL vlogs
-- get better at learning methods
-- be employed
-
 <img src="https://imgs.xkcd.com/comics/automation_2x.png" width="35%" />
