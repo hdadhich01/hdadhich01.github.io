@@ -22,6 +22,7 @@ fingerprintAlgorithm = "sha256"
   # logo = "img/logo.jpg"
   # logoDark = "img/dark-logo.jpg"
   showTitle = false
+  blogBadge = "2"
 
 [footer]
   showCopyright = true
@@ -37,14 +38,14 @@ fingerprintAlgorithm = "sha256"
 [article]
   showDate = true
   showDateUpdated = true
-  showAuthor = true
+  showAuthor = false
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = true
   editURL = "https://github.com/hdadhich01/hdadhich01.github.io/tree/main/content/"
   editAppendPath = true
   showHeadingAnchors = true
-  showPagination = true
+  showPagination = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = false
