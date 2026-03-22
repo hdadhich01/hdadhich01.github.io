@@ -5,7 +5,7 @@ description: "Some cool LaTeX templates I made"
 new: true
 ---
 
-I like to use LaTeX a lot (shoutout AI IDEs): for my resume, letterheads, even cheatsheets; I've attached some cool ones I've made here, feel free to use them!
+I like to use LaTeX a lot (shoutout AI IDEs): for my resume, letterheads, even cheatsheets; I've made some cool ones I've attached here, feel free to use them!
 
 <div class="flex flex-col sm:flex-row gap-4 w-full mt-6 items-start">
   <div class="flex flex-col w-full sm:w-auto" style="flex: 0.7712;">
