@@ -1,0 +1,44 @@
+name: Sync Substack
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # every night at 2 AM UTC
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run sync
+        env:
+          SUBSTACK_RSS_URL: https://hdadhich01.substack.com/feed
+          CONTENT_DIR: content/blog
+        run: python scripts/sync_substack.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/blog/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "sync: update blog posts from Substack"
+            git push
+          fi
