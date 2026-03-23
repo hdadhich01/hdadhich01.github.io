@@ -13,8 +13,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+import math
+
 import feedparser
 
+WORDS_PER_MINUTE = 200
 CONTENT_DIR = Path(os.environ.get("CONTENT_DIR", "content/blog"))
 RSS_URL = os.environ.get(
     "SUBSTACK_RSS_URL", "https://hdadhich01.substack.com/feed"
@@ -43,6 +46,18 @@ def parse_date(entry) -> datetime:
     return datetime.now(timezone.utc)
 
 
+def estimate_word_count(entry) -> int:
+    """Extract plain text word count from RSS content or summary."""
+    html = ""
+    if hasattr(entry, "content") and entry.content:
+        html = entry.content[0].get("value", "")
+    if not html and hasattr(entry, "summary"):
+        html = entry.summary or ""
+    plain = re.sub(r"<[^>]+>", " ", html)
+    words = plain.split()
+    return len(words)
+
+
 def build_post(entry, pub_date: datetime, substack_url: str) -> str:
     title = entry.get("title", "Untitled").replace('"', '\\"')
     description = entry.get("summary", "")
@@ -51,6 +66,9 @@ def build_post(entry, pub_date: datetime, substack_url: str) -> str:
         if len(description) > 200:
             description = description[:197] + "..."
         description = description.replace('"', '\\"')
+
+    word_count = estimate_word_count(entry)
+    reading_time = max(1, math.ceil(word_count / WORDS_PER_MINUTE))
 
     lines = [
         "---",
@@ -61,13 +79,18 @@ def build_post(entry, pub_date: datetime, substack_url: str) -> str:
         lines.append(f'description: "{description}"')
     lines += [
         f'externalUrl: "{substack_url}"',
-        "showReadingTime: false",
+        "showReadingTime: true",
         "build:",
         '  render: "never"',
         '  list: "local"',
         "---",
         "",
     ]
+
+    filler = " ".join(["word"] * word_count)
+    lines.append(f'<div style="display:none">{filler}</div>')
+    lines.append("")
+
     return "\n".join(lines)
 
 

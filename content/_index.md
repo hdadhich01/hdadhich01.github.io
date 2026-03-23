@@ -3,60 +3,69 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}} -->
 
-Hey, I'm a **grad student** @ <span class="pop-emoji" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span> and alumnus of <span class="pop-emoji" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span>. I take [**pictures**](https://unsplash.com/@hdadhich01), build [**stuff**](https://github.com/hdadhich01/?tab=repositories) for convenience, and make [**guides**](blog). I enjoy minimalist design, EDC gear, and software for [**productivity**](/tools) and education. Previously interned at [**Intuitive**](https://www.intuitive.com/en-us) and a clinical AI startup.
+Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> and now @ <span class="pop-emoji" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>. I like minimal and efficient design & software for [**productivity**](/tools). Everything on me here, reach out!
 
 <script>
 (function() {
   function createEmojiBurst(el, emoji) {
-    // For special UC Santa Cruz: combo slug+banana
-    const isUCSC = el.textContent.trim().toLowerCase().includes("ucsc");
-    // If UCSC, alternate 🐌 and 🍌, else use uniform emoji
-    const slugBananaCombo = ['🐌','🍌','🐌','🍌','🐌','🍌','🐌','🍌','🐌'];
+    const text = el.textContent.trim().toLowerCase();
+    const isUCSC = text.includes("ucsc");
+    const isUCLA = text.includes("ucla");
+    const ucscCombo = ['🐌','🍌','🐌','🍌','🐌','🍌','🐌','🍌','🐌'];
+    const uclaCombo = ['🐻','🐾','🐻','🐾','🐻','🐾','🐻','🐾','🐻'];
 
     const rect = el.getBoundingClientRect();
     const numEmojis = 9;
     const angleStep = 2 * Math.PI / numEmojis;
-    const parent = el.offsetParent || document.body;
+
     for (let i = 0; i < numEmojis; i++) {
       const span = document.createElement('span');
-      // UCSC = combo, else uniform emoji
-      span.textContent = isUCSC ? slugBananaCombo[i % slugBananaCombo.length] : emoji;
-      span.style.position = 'absolute';
+      span.textContent = isUCSC ? ucscCombo[i % ucscCombo.length] : isUCLA ? uclaCombo[i % uclaCombo.length] : emoji;
+      span.style.position = 'fixed';
       span.style.pointerEvents = 'none';
-      span.style.fontSize = '1em'; // Slightly smaller emoji
-      span.style.top = (rect.top + rect.height/2 - parent.getBoundingClientRect().top) + 'px';
-      span.style.left = (rect.left + rect.width/2 - parent.getBoundingClientRect().left) + 'px';
-      // initial state
-      span.style.transform = `translate(0px, 0px) scale(1)`;
-      span.style.transition = 'transform 1.25s cubic-bezier(.24,.85,.36,1.46), opacity 1.08s';
+      span.style.fontSize = '1em';
       span.style.zIndex = '9999';
       span.style.opacity = '1';
-      parent.appendChild(span);
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      span.style.left = cx + 'px';
+      span.style.top = cy + 'px';
+      span.style.transform = 'translate(-50%, -50%) scale(1)';
+      span.style.transition = 'transform 0.8s cubic-bezier(.22,.95,.36,1), opacity 0.7s ease-out';
+      document.body.appendChild(span);
 
-      // Animate outwards explosively, then downward with fade
       setTimeout(() => {
-        const distance = 58 + Math.random()*24;
-        const angle = i * angleStep + (Math.random() - 0.5) * 0.8;
-        // Outwards and slight up (explosion)
+        const distance = 48 + Math.random() * 20;
+        const angle = i * angleStep + (Math.random() - 0.5) * 0.5;
         const x = Math.cos(angle) * distance;
-        const y = Math.sin(angle) * distance * 0.85;
-        // Animate to "explosion"
-        span.style.transform = `translate(${x}px, ${y}px) scale(1.22)`;
-        // After short pause at peak, let it "fall" and fade
+        const y = Math.sin(angle) * distance;
+        span.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(1.1)`;
         setTimeout(() => {
-          // "Fall away" - drift down from peak, increase scale slightly, fade out
-          span.style.transition = 'transform 0.85s cubic-bezier(.51,1.26,.66,.87), opacity 0.75s';
-          span.style.transform = `translate(${x + (Math.random()-0.5)*16}px, ${y + 55 + Math.random()*23}px) scale(0.94) rotate(${(Math.random() - 0.5)*36}deg)`;
+          span.style.transition = 'transform 0.6s ease-in, opacity 0.5s ease-in';
+          span.style.transform = `translate(calc(-50% + ${x * 1.3}px), calc(-50% + ${y * 1.3 + 30}px)) scale(0.7)`;
           span.style.opacity = '0';
-        }, 320 + Math.random()*90);
-      }, 14);
+        }, 350);
+      }, 10);
 
-      // Remove after animation
       setTimeout(() => {
-        if (span.parentNode === parent) parent.removeChild(span);
-      }, 1700);
+        if (span.parentNode) span.parentNode.removeChild(span);
+      }, 1200);
     }
   }
+
+  function startGreyPulse() {
+    const els = document.querySelectorAll('.pop-emoji');
+    function pulse() {
+      const el = els[Math.floor(Math.random() * els.length)];
+      el.style.transition = 'color 0.6s ease';
+      el.style.color = '#9ca3af';
+      setTimeout(() => {
+        el.style.color = '';
+      }, 1200);
+    }
+    setInterval(pulse, 4000 + Math.random() * 3000);
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.pop-emoji').forEach(function(el) {
       el.addEventListener('click', function(e) {
@@ -72,6 +81,7 @@ Hey, I'm a **grad student** @ <span class="pop-emoji" data-emoji="🐻" style="c
       el.setAttribute('aria-label', 'Celebrate ' + el.textContent.trim());
       el.style.outline = 'none';
     });
+    startGreyPulse();
   });
 })();
 </script>
@@ -105,41 +115,55 @@ Hey, I'm a **grad student** @ <span class="pop-emoji" data-emoji="🐻" style="c
 }
 </style>
 
-<div style="text-align: center; margin-left: 7%;">
+<div class="email-block">
   <span style="font-family: Roboto Mono, monospace; font-size: 0.85em; display: inline-block; line-height: 1.6;">
     <span class="email-copy" data-email="me@harshdadhich.com" style="display: inline-block; min-width: 7.5em; position: relative; cursor: pointer;" role="button" tabindex="0" aria-label="Copy email to clipboard">
-      <span style="display: inline-block; width: 4.5em; text-align: right;">me</span>
-      <span aria-hidden="true" style="display: inline-block; width: 3em;">[at]</span>
-      <span style="display: inline-block; min-width: 13em; text-align: left;">harshdadhich.com</span>
+      <span class="email-user">me</span>
+      <span aria-hidden="true" class="email-at">[at]</span>
+      <span class="email-domain">harshdadhich.com</span>
       <span class="email-toast"></span>
     </span><br>
     <span class="email-copy" data-email="hdadhich@ucla.edu" style="display: inline-block; min-width: 7.5em; position: relative; cursor: pointer;" role="button" tabindex="0" aria-label="Copy email to clipboard">
-      <span style="display: inline-block; width: 4.5em; text-align: right;">hdadhich</span>
-      <span aria-hidden="true" style="display: inline-block; width: 3em;">[at]</span>
-      <span style="display: inline-block; min-width: 13em; text-align: left;">ucla.edu</span>
+      <span class="email-user">hdadhich</span>
+      <span aria-hidden="true" class="email-at">[at]</span>
+      <span class="email-domain">ucla.edu</span>
       <span class="email-toast"></span>
     </span>
   </span>
 </div>
 
 <style>
+.email-block {
+  text-align: center;
+  margin-left: 7%;
+}
+.email-user {
+  display: inline-block;
+  width: 4.5em;
+  text-align: right;
+}
+.email-at {
+  display: inline-block;
+  width: 3em;
+}
+.email-domain {
+  display: inline-block;
+  min-width: 13em;
+  text-align: left;
+}
 .email-copy {
   user-select: none;
   border-radius: 9px;
   background: transparent;
   text-decoration: none !important;
-  /* Only encompass text, not padding - override spacing below */
   display: inline-flex;
   align-items: center;
   padding: 0 0.25em;
-  /* Remove all margin and unnecessary space so bg hugs text */
   margin: 0;
   box-sizing: border-box;
-  /* Remove background transition */
   transition: none;
 }
 .email-copy span {
-  /* Minimize their contribution to outdenting the highlight */
   padding: 0;
   margin: 0;
 }
@@ -147,7 +171,22 @@ Hey, I'm a **grad student** @ <span class="pop-emoji" data-emoji="🐻" style="c
   font-family: inherit;
   letter-spacing: inherit;
 }
-/* No hover/focus styling */
+@media (max-width: 480px) {
+  .email-block {
+    margin-left: 0;
+  }
+  .email-user {
+    width: auto;
+    text-align: center;
+  }
+  .email-at {
+    width: 2.2em;
+  }
+  .email-domain {
+    min-width: auto;
+    text-align: center;
+  }
+}
 </style>
 
 <script>

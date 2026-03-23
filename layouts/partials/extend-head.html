@@ -1,0 +1,37 @@
+<style>
+nav a[href*="/blog"] {
+  position: relative;
+}
+nav a[href*="/blog"]::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #FF6719;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24l10.54-7.056L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 8px;
+  pointer-events: none;
+}
+</style>
+<script data-cfasync="false">
+// Robust appearance switcher — uses event delegation so it works
+// even if Cloudflare Rocket Loader delays or blocks the theme's JS
+document.addEventListener("click", function(e) {
+  var btn = e.target.closest("[id^='appearance-switcher']");
+  if (!btn) return;
+  document.documentElement.classList.toggle("dark");
+  var meta = document.querySelector("meta[name=theme-color]");
+  if (meta) {
+    var get = function(v) {
+      return "rgb(" + getComputedStyle(document.documentElement).getPropertyValue(v).replace(/\s+/g,"") + ")";
+    };
+    meta.setAttribute("content", document.documentElement.classList.contains("dark") ? get("--color-neutral-800") : get("--color-neutral"));
+  }
+  localStorage.setItem("appearance", document.documentElement.classList.contains("dark") ? "dark" : "light");
+});
+</script>
