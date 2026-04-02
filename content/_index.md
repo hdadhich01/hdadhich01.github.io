@@ -3,7 +3,7 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}} -->
 
-Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> and now @ <span class="pop-emoji" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>. I like minimal and efficient design & software for [**productivity**](/tools). Everything on me here, reach out!
+Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> and now @ <span class="pop-emoji" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>. I like minimal and efficient design + software for [**productivity**](/tools). Everything on me here, reach out!
 
 <script>
 (function() {
