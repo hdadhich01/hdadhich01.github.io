@@ -13,7 +13,7 @@ Some daily drivers, others for occasional utility
 
 <div class="tools-img">
   <img src="setup.jpeg" width="100%" style="border-radius: 8px;"/>
-  <figcaption style="margin-top: -25px; font-size: 0.75em; text-align: center;">As of Sep 2025</figcaption>
+  <figcaption style="margin-top: -25px; font-size: 0.75em; text-align: center;">As of May 2026</figcaption>
 </div>
 
 Check out [this](#cost) to see what I pay for
@@ -27,9 +27,13 @@ Check out [this](#cost) to see what I pay for
 - [Fantastical](https://flexibits.com/fantastical) (calendar + tasks)
 - [Todoist](https://todoist.com) (better todo list)
 - [Obsidian](https://obsidian.md) (`.md` based editor)
+- [Buffer](https://samirpatil2000.github.io/products/buffer/) (clipboard manager)
 - [1.1.1.1](https://1.1.1.1) (internet traffic rerouter)
+- [Anarlog](https://github.com/fastrepl/hyprnote) (meeting notes; [Granola](https://granola.ai) alt)
+- [TypeWhisper](https://typewhisper.app) (local dictation)
+- [MyRephra](https://myrephra.com) (inline AI rephraser)
+- [Chorus](https://chorus.sh) (multi-model AI chat)
 - [Scira](https://scira.ai) (student AI sub)
-- [Granola](https://granola.ai) (AI meeting notes)
 
 ## Dev
 
@@ -60,6 +64,7 @@ quite unecessary; \*super worth it
 - \*[Swish](https://highlyopinionated.co/swish) (window tiling)
 - \*[Hand Mirror](https://handmirror.app) (webcam peek)
 - \*[CleanShot X](https://cleanshot.com) (screenshot tool)
+- [Keka](https://www.keka.io) (archive/compression)
 - [Numi](https://numi.app) (NLP calculator)
 - [NotchNook](https://lo.cafe/notchnook) (cleaner notch)
 - [BatFi](https://micropixels.gumroad.com/l/batfi) (battery protection)
