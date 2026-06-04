@@ -20,18 +20,19 @@ Check out [this](#cost) to see what I pay for
 
 ## Workflow
 
-- [Orion](https://orionbrowser.com) (fast browser)
-  - Optimized for <span style="font-family:SF Pro,Segoe UI Emoji,Apple Color Emoji;">&#63743;</span> + <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/3840px-Firefox_logo%2C_2019.svg.png" alt="Firefox" title="Firefox" style="height:1em;vertical-align:-0.1em;margin:0 0.1em;display:inline;">/<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/1280px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Chrome" title="Chrome" style="height:1em;vertical-align:-0.1em;margin:0 0.1em;display:inline;"> extensions
-  - switched over from [Zen](https://zen-browser.app) (<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/3840px-Firefox_logo%2C_2019.svg.png" alt="Firefox" title="Firefox" style="height:1em;vertical-align:-0.1em;margin:0 0.1em;display:inline;">-based)
-- [Shortwave](https://shortwave.com) (smart email)
-- [Fantastical](https://flexibits.com/fantastical) (calendar + tasks)
+- [Helium](https://helium.app) (browser)
+  - Optimized for <span style="font-family:SF Pro,Segoe UI Emoji,Apple Color Emoji;">&#63743;</span> + <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/1280px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Chrome" title="Chrome" style="height:1em;vertical-align:-0.1em;margin:0 0.1em;display:inline;"> extensions
+  - tried [Orion](https://orionbrowser.com) (WebKit-based but buggy ext support)
+  - and before that: [Zen](https://zen-browser.app) (Gecko-based but mem heavy)
+- [Shortwave](https://shortwave.com) (smart email, just for mobile viewing)
+- [Fantastical](https://flexibits.com/fantastical) (calendar)
 - [Todoist](https://todoist.com) (better todo list)
 - [Obsidian](https://obsidian.md) (`.md` based editor)
 - [Buffer](https://samirpatil2000.github.io/products/buffer/) (clipboard manager)
 - [1.1.1.1](https://1.1.1.1) (internet traffic rerouter)
 - [Anarlog](https://github.com/fastrepl/hyprnote) (meeting notes; [Granola](https://granola.ai) alt)
-- [TypeWhisper](https://typewhisper.app) (local dictation)
-- [MyRephra](https://myrephra.com) (inline AI rephraser)
+<!--- [TypeWhisper](https://typewhisper.app) (local dictation)
+- [MyRephra](https://myrephra.com) (inline AI rephraser)-->
 - [Chorus](https://chorus.sh) (multi-model AI chat)
 - [Scira](https://scira.ai) (student AI sub)
 
@@ -75,8 +76,7 @@ quite unecessary; \*super worth it
 
 Eveyrthing above I use for free except:
 
-- [Scira](https://scira.ai) ($5/m)
-  - use student promo
+- [Scira](https://scira.ai) ($9/m)
 - [Swish](https://highlyopinionated.co/swish) ($10/lifetime)
   - email guy for a student promo
 - [CleanShot X](https://cleanshot.com) ($20/lifetime)
