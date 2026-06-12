@@ -20,7 +20,7 @@ Check out [this](#cost) to see what I pay for
 
 ## Workflow
 
-- [Helium](https://helium.app) (browser)
+- [Helium](https://helium.computer) (browser)
   - Optimized for <span style="font-family:SF Pro,Segoe UI Emoji,Apple Color Emoji;">&#63743;</span> + <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/1280px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Chrome" title="Chrome" style="height:1em;vertical-align:-0.1em;margin:0 0.1em;display:inline;"> extensions
   - tried [Orion](https://orionbrowser.com) (WebKit-based but buggy ext support)
   - and before that: [Zen](https://zen-browser.app) (Gecko-based but mem heavy)
