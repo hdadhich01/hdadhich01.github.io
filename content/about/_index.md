@@ -86,13 +86,14 @@ I like:
 
 I think:
 
-- EDC gear (trying to be minimal)
-- a clean [desk setup](/tools)
-- bike maintenance (learning)
-- hiking (need to gain more exp)
+- EDC gear (tools & gadgets)
+- an efficient & clean [desk setup](/tools)
+- bike maintenance
+- hiking and summiting
+- homelabbing (self hosting stuff)
 
 <p style="margin: 0; padding-left: 33px;">
-  is cool
+  is cool and I'm getting into it
 </p>
 
 I am:
