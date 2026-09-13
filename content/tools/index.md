@@ -128,8 +128,8 @@ I like to think these are the best picks given free/price + value + competition
   - [Transit](https://transit.app) (public transit ETAs)
   - [GasBuddy](https://www.gasbuddy.com) (gas prices)
   - [SpotAngels](https://www.spotangels.com) (street parking finder)
-  - [SpotHero](https://spothero.com) (big city cheap parking garage)
-  - [Empower](https://apps.apple.com/us/app/empower-your-ride-your-way/id1454849875) (cheaper uber/lyft)
+  - [SpotHero](https://spothero.com) (big city cheap parking)
+  - [Empower](https://apps.apple.com/us/app/empower-your-ride-your-way/id1454849875) (cheap uber/lyft)
 
 ## Miscellaneous
 
