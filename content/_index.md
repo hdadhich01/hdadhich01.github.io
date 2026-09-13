@@ -3,7 +3,23 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}} -->
 
-Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> and now @ <span class="pop-emoji" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>. I like minimal and efficient design + software for [**productivity**](/tools). Everything on me here, reach out!
+Hi, I've graduated from <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> + <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>, and now work at <a class="pop-link not-prose pulse-egg" data-pulse="grey" href="https://www.youtube.com/watch?v=DGAodDcLqWU&amp;t=64s" target="_blank" rel="noopener noreferrer">Capital One</a>
+
+<style>
+.pop-link,
+.pop-link:hover,
+.pop-link:focus,
+.pop-link:visited {
+  color: inherit !important;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  outline: none;
+}
+</style>
 
 <script>
 (function() {
@@ -53,19 +69,6 @@ Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="curs
     }
   }
 
-  function startGreyPulse() {
-    const els = document.querySelectorAll('.pop-emoji');
-    function pulse() {
-      const el = els[Math.floor(Math.random() * els.length)];
-      el.style.transition = 'color 0.6s ease';
-      el.style.color = '#9ca3af';
-      setTimeout(() => {
-        el.style.color = '';
-      }, 1200);
-    }
-    setInterval(pulse, 4000 + Math.random() * 3000);
-  }
-
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.pop-emoji').forEach(function(el) {
       el.addEventListener('click', function(e) {
@@ -81,7 +84,6 @@ Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="curs
       el.setAttribute('aria-label', 'Celebrate ' + el.textContent.trim());
       el.style.outline = 'none';
     });
-    startGreyPulse();
   });
 })();
 </script>
@@ -352,9 +354,9 @@ Hey, I'm a **graduate** of <span class="pop-emoji" data-emoji="🐌" style="curs
 })();
 </script>
 
-{{< button href="https://cal.com/hdadhich01/chat">}}
+<!--{{< button href="https://cal.com/hdadhich01/chat">}}
 Let's Chat!
-{{< /button >}}
+{{< /button >}}-->
 &nbsp;
 {{< button href="/resume/latest.pdf" target="_self" >}}
 Resume

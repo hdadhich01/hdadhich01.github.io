@@ -43,7 +43,7 @@ layout: "simple"
 }
 </style>
 
-<div class="about-photos">
+<!--<div class="about-photos">
   <div class="photo-card">
     <img src="east_peak.jpeg" />
     <figcaption>
@@ -64,27 +64,48 @@ layout: "simple"
       <span style="text-align: right;">Aug 2024</span>
     </figcaption>
   </div>
-</div>
+</div>-->
 
-Professional stuff on socials. But here's a bit more:
+Professional stuff on socials, but here's a bit more:
 
 - born in India, moved shortly after
 - childhood spent in Midwest, Pune, LA
   - in that respective order
-- high school + undergrad in the Bay
-
-I enjoy:
-
-- biking and walking with music
-- helping other people
-- discovering new music
-- meticulously organizing
+- high school + bachelors in the Bay Area
+- master's in LA, and now in DMV
 
 I like:
 
-- sunday resets
-- sunny in winter time
-- every-day carry gear
+- biking and walking with music
+- helping other people
+  - reach out with any questions!
+- discovering new music
+- meticulously organizing
+- improving my regimen
+- sunday (or monday) resets
+
+I think:
+
+- EDC gear (trying to be minimal)
 - a clean [desk setup](/tools)
+- bike maintenance (learning)
+- hiking (need to gain more exp)
+
+<p style="margin: 0; padding-left: 33px;">
+  is cool
+</p>
+
+I am:
+- practicing to do more with less
+  - digitally and physically
+  - you don't need to or can't optimize
+    - every purchase
+    - every workflow
+    - every decision
+- excited for the future
+
+----
 
 <img class="about-xkcd" src="https://imgs.xkcd.com/comics/automation_2x.png" />
+
+This site has easter eggs

@@ -1,0 +1,52 @@
+<!--
+  Shared easter-egg pulse.
+
+  Every so often one random easter egg on the page briefly fades to a muted
+  state and then comes back. Elements opt in with:
+
+    class="pulse-egg" data-pulse="grey"        -> text fades to grey
+    class="pulse-egg" data-pulse="desaturate"  -> emoji fades to greyscale
+
+  Resting state is always the normal, full-colour one; the muted state is the
+  brief flash. Timing lives in PULSE_* below so every egg stays in sync.
+-->
+<style>
+.pulse-egg {
+  transition: color 0.6s ease, filter 0.6s ease, opacity 0.6s ease, transform 0.25s ease;
+}
+.pulse-egg[data-pulse="grey"].pulse-egg--muted {
+  color: #9ca3af !important;
+}
+.pulse-egg[data-pulse="desaturate"].pulse-egg--muted {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+</style>
+
+<script>
+(function() {
+  var PULSE_MIN_GAP = 3000;  // ms between flashes, floor
+  var PULSE_JITTER  = 2000;  // ms of randomness added to the gap
+  var PULSE_HOLD    = 1200;  // ms an egg stays muted before coming back
+
+  function startPulse() {
+    var eggs = document.querySelectorAll('.pulse-egg');
+    if (!eggs.length) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    setInterval(function() {
+      var el = eggs[Math.floor(Math.random() * eggs.length)];
+      el.classList.add('pulse-egg--muted');
+      setTimeout(function() {
+        el.classList.remove('pulse-egg--muted');
+      }, PULSE_HOLD);
+    }, PULSE_MIN_GAP + Math.random() * PULSE_JITTER);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startPulse);
+  } else {
+    startPulse();
+  }
+})();
+</script>
