@@ -98,12 +98,7 @@ I think:
 
 I am:
 - practicing to do more with less
-  - digitally and physically
-  - you don't need to or can't optimize
-    - every purchase
-    - every workflow
-    - every decision
-- excited for the future
+- use my time better
 
 ----
 

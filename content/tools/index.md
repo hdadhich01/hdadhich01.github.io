@@ -154,11 +154,11 @@ I freemaxx except these:
 
 Recurring:
 - [Apple Music](https://music.apple.com) ($7/m; use edu email)
-- [Scira Pro](https://scira.ai) ($9/m; use edu email)
+- [Scira Pro](https://scira.ai) ($5/m; use `SCIRASTUD` discount)
 - [Claude Pro](https://claude.ai) ($20/m)
 - [x.com](https://x.com) ($8/m)
 
-One and done:
+Once:
 - [Swish](https://highlyopinionated.co/swish) ($10/life; email for student promo)
 - [CleanShot X](https://cleanshot.com) ($20/life; use edu email)
 
