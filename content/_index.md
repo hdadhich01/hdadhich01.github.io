@@ -3,7 +3,9 @@
 Actively searching for <b>off-cycle</b> and <b>SU25</b> opportunities
 {{< /alert >}} -->
 
-Hi, I've graduated from <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> + <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>, and now work at <a class="pop-link not-prose pulse-egg" data-pulse="grey" href="https://www.youtube.com/watch?v=DGAodDcLqWU&amp;t=64s" target="_blank" rel="noopener noreferrer">Capital One</a>
+Hi, I've graduated from <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐌" style="cursor:pointer; font-weight:bold;">UCSC</span> + <span class="pop-emoji pulse-egg" data-pulse="grey" data-emoji="🐻" style="cursor:pointer; font-weight:bold;">UCLA</span>, and now work at **Capital One**
+
+<!--<a class="pop-link not-prose pulse-egg" data-pulse="grey" href="https://www.youtube.com/watch?v=DGAodDcLqWU&amp;t=64s" target="_blank" rel="noopener noreferrer">Capital One</a>-->
 
 <style>
 .pop-link,

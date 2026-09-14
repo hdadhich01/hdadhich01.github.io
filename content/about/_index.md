@@ -70,7 +70,7 @@ Professional stuff on socials, but here's a bit more:
 
 - born in India, moved shortly after
 - childhood spent in Midwest, Pune, LA
-  - in that respective order
+  - in that order
 - high school + bachelors in the Bay Area
 - master's in LA, and now in DMV
 
@@ -87,7 +87,7 @@ I like:
 I think:
 
 - EDC gear (tools & gadgets)
-- an efficient & clean [desk setup](/tools)
+- a minimal & clean [desk setup](/tools)
 - bike maintenance
 - hiking and summiting
 - homelabbing (self hosting stuff)
@@ -98,7 +98,7 @@ I think:
 
 I am:
 - practicing to do more with less
-- use my time better
+- trying to use my time better
 
 ----
 
