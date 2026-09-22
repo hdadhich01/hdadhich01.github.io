@@ -154,9 +154,12 @@ I freemaxx except these:
 
 Recurring:
 - [Apple Music](https://music.apple.com) ($7/m; use edu email)
+- [Origin](https://useorigin.com) ($1/y; use limited promo & insta-cancel)
 - [Scira Pro](https://scira.ai) ($5/m; use `SCIRASTUD` discount)
 - [Claude Pro](https://claude.ai) ($20/m)
 - [x.com](https://x.com) ($8/m)
+
+I change up AI subs occasionally (whatever is SOTA + power user compatible)
 
 Once:
 - [Swish](https://highlyopinionated.co/swish) ($10/life; email for student promo)
