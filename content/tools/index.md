@@ -86,7 +86,7 @@ Check out [this](#subs) to see what I pay for
 
 I've spent a lot of time (much better spent elsewhere) on my picks here
 
-I like to think these are the best picks given free/price + value + competition
+I like to think these are the best picks given price + value + competition
 
 ## Workflow
 
@@ -158,8 +158,6 @@ Recurring:
 - [Scira Pro](https://scira.ai) ($5/m; use `SCIRASTUD` discount)
 - [Claude Pro](https://claude.ai) ($20/m)
 - [x.com](https://x.com) ($8/m)
-
-I change up AI subs occasionally (whatever is SOTA + power user compatible)
 
 Once:
 - [Swish](https://highlyopinionated.co/swish) ($10/life; email for student promo)

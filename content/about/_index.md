@@ -69,8 +69,7 @@ layout: "simple"
 Professional stuff on socials, but here's a bit more:
 
 - born in India, moved shortly after
-- childhood spent in Midwest, Pune, LA
-  - in that order
+- childhood spent in Midwest, India, LA
 - high school + bachelors in the Bay Area
 - master's in LA, and now in DMV
 
@@ -86,10 +85,10 @@ I like:
 
 I think:
 
-- EDC gear (tools & gadgets)
+- EDC gear
 - a minimal & clean [desk setup](/tools)
 - bike maintenance
-- hiking and summiting
+- hiking
 - homelabbing (self hosting stuff)
 
 <p style="margin: 0; padding-left: 33px;">
