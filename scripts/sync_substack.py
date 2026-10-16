@@ -16,15 +16,12 @@ from urllib.parse import urlparse
 import math
 
 import feedparser
+from curl_cffi import requests
 
 WORDS_PER_MINUTE = 200
 CONTENT_DIR = Path(os.environ.get("CONTENT_DIR", "content/blog"))
 RSS_URL = os.environ.get(
     "SUBSTACK_RSS_URL", "https://hdadhich01.substack.com/feed"
-)
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 )
 
 
@@ -132,18 +129,21 @@ def main():
         sys.exit(1)
 
     print(f"Fetching: {RSS_URL}")
-    # Substack sits behind Cloudflare, which rejects feedparser's default
-    # user agent from datacenter IPs (e.g. GitHub Actions runners).
-    feed = feedparser.parse(RSS_URL, agent=USER_AGENT)
-
-    status = feed.get("status")
-    if status is not None and status >= 400:
-        print(f"ERROR: HTTP {status} fetching feed.")
+    # Substack sits behind Cloudflare, which 403s plain Python clients from
+    # datacenter IPs (e.g. GitHub Actions runners). Impersonate Chrome's TLS
+    # fingerprint and headers to look like a regular browser.
+    resp = requests.get(RSS_URL, impersonate="chrome", timeout=30)
+    if resp.status_code >= 400:
+        print(f"ERROR: HTTP {resp.status_code} fetching feed.")
+        print(f"  cf-mitigated: {resp.headers.get('cf-mitigated', '-')}")
+        print(f"  cf-ray: {resp.headers.get('cf-ray', '-')}")
+        print(f"  body: {resp.text[:300]!r}")
         sys.exit(1)
 
+    feed = feedparser.parse(resp.content)
     if not feed.entries:
         reason = feed.get("bozo_exception", "feed has no entries")
-        print(f"ERROR: Failed to parse feed (HTTP {status}): {reason}")
+        print(f"ERROR: Failed to parse feed: {reason}")
         sys.exit(1)
 
     print(f"Found {len(feed.entries)} entries.\n")

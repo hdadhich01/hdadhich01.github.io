@@ -4,9 +4,15 @@ on:
   schedule:
     - cron: "0 16 * * *" # every morning at 8 AM PST (4 PM UTC)
   workflow_dispatch: # allow manual trigger from GitHub UI
+  push:
+    branches: [main]
+    paths: # re-run when the sync itself changes
+      - .github/workflows/sync-substack.yml
+      - scripts/**
 
 permissions:
   contents: write
+  actions: write # to trigger the deploy workflow
 
 jobs:
   sync:
@@ -32,6 +38,8 @@ jobs:
         run: python scripts/sync_substack.py
 
       - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -41,4 +49,7 @@ jobs:
           else
             git commit -m "sync: update blog posts from Substack"
             git push
+            # Pushes made with GITHUB_TOKEN don't trigger other workflows,
+            # so kick off the deploy explicitly.
+            gh workflow run hugo.yml --ref main
           fi
