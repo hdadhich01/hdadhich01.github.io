@@ -31,8 +31,8 @@
   weight = 40
 
 [[main]]
-  name = "📚"
-  url = "https://goodreads.com/hdadhich01"
+  name = "🎬"
+  url = "https://letterboxd.com/hdadhich01"
   weight = 50
   [main.params]
     target = "_blank"

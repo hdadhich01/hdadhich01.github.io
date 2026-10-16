@@ -22,6 +22,10 @@ CONTENT_DIR = Path(os.environ.get("CONTENT_DIR", "content/blog"))
 RSS_URL = os.environ.get(
     "SUBSTACK_RSS_URL", "https://hdadhich01.substack.com/feed"
 )
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+)
 
 
 def slugify(text: str) -> str:
@@ -128,10 +132,18 @@ def main():
         sys.exit(1)
 
     print(f"Fetching: {RSS_URL}")
-    feed = feedparser.parse(RSS_URL)
+    # Substack sits behind Cloudflare, which rejects feedparser's default
+    # user agent from datacenter IPs (e.g. GitHub Actions runners).
+    feed = feedparser.parse(RSS_URL, agent=USER_AGENT)
 
-    if feed.bozo and not feed.entries:
-        print(f"ERROR: Failed to parse feed: {feed.bozo_exception}")
+    status = feed.get("status")
+    if status is not None and status >= 400:
+        print(f"ERROR: HTTP {status} fetching feed.")
+        sys.exit(1)
+
+    if not feed.entries:
+        reason = feed.get("bozo_exception", "feed has no entries")
+        print(f"ERROR: Failed to parse feed (HTTP {status}): {reason}")
         sys.exit(1)
 
     print(f"Found {len(feed.entries)} entries.\n")

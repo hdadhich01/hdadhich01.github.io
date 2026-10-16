@@ -79,14 +79,16 @@ Some daily drivers, others for occasional utility
 
 <div class="tools-img">
   <img src="setup.jpeg" width="100%" style="border-radius: 8px;"/>
-  <figcaption style="margin-top: -25px; font-size: 0.75em; text-align: center;">As of 05/26; update coming soon</figcaption>
+  <figcaption style="margin-top: -25px; font-size: 0.75em; text-align: center;">as of during grad school; refresh coming soon</figcaption>
 </div>
 
-Check out [this](#subs) to see what I pay for
+I like to think these are the best picks given price + value + competition
 
 I've spent a lot of time (much better spent elsewhere) on my picks here
 
-I like to think these are the best picks given price + value + competition
+Pieced together from running myself + reddit + [this](https://docs.google.com/spreadsheets/d/1mPuOq3x0SMjmcrrjNpbMqb_ThRc9S51LPD-lnd9ArY4/edit?gid=849549547#gid=849549547)
+
+Check out [this](#subs) to see what I pay for
 
 ## Workflow
 
@@ -96,7 +98,7 @@ I like to think these are the best picks given price + value + competition
   - and before that: [Zen](https://zen-browser.app) (Gecko-based but mem heavy)
 - [Shortwave](https://shortwave.com) (smart email, just on iOS)
 - [Fantastical](https://flexibits.com/fantastical) (calendar)
-- [Todoist](https://todoist.com) (better todo list)
+- [Todoist](https://todoist.com) (todo list, syncs with \^)
 - [Obsidian](https://obsidian.md) (`.md` based editor)
   - look at my [.obsidian](https://github.com/hdadhich01/.obsidian) (similar to dotfiles)
 - [Buffer](https://samirpatil2000.github.io/products/buffer/) (clipboard manager)
@@ -106,17 +108,17 @@ I like to think these are the best picks given price + value + competition
 
 ## Dev
 
-- [cmux](https://cmux.com/) (terminal)
+- [Orca](https://www.onorca.dev) ([ADE](https://nimbalyst.com/blog/what-is-an-agentic-development-environment/))
+  - used [cmux](https://cmux.com/) before (more of a terminal multiplexer GUI)
+  - and good old terminal or VSCode extensions for CC/Codex
 - [OrbStack](https://orbstack.dev) (quick VMs/docker)
-- [Zed](https://zed.dev) (plain IDE)
-- [Orca](https://www.onorca.dev) (AI IDE)
-- [Tower](https://www.git-tower.com) (git history)
+- [Zed](https://zed.dev) (plain IDE; granular edits ig)
+- [Tower](https://www.git-tower.com) (git history GUI; looks cool let me larp)
 - [WakaTime](https://wakatime.com) (time tracking; [me](https://wakatime.com/hdadhich01))
 
 ## Lifestyle
 
-- [Apple Music](https://music.apple.com) (<span class="emoji-tip" tabindex="0" role="button" aria-label="yes spotify algo better but i am in the apple ecosystem and truth be told it does just look better on apple products" data-tip="yes spotify algo better but i am in the apple ecosystem and truth be told it just looks better on apple products"><span class="emoji-tip-face pulse-egg" data-pulse="desaturate">🫩</span></span>)
-- [Endel](https://endel.io) (focus music)
+- [Apple Music](https://music.apple.com) (<span class="emoji-tip" tabindex="0" role="button" aria-label="UI > spotify, algo ≈ spotify" data-tip="UI > spotify, algo ≈ spotify"><span class="emoji-tip-face pulse-egg" data-pulse="desaturate">🫩</span></span>)
 - [Origin](https://useorigin.com) (finances dash)
 - Health
   - [Hevy](https://www.hevyapp.com) (lifting tracker)
@@ -124,12 +126,14 @@ I like to think these are the best picks given price + value + competition
   - [SuppCo](https://supp.co) (supplement recs)
   - [Yuka](https://yuka.io) (food/cosmetics ratings)
   - [Countoura](https://apps.apple.com/us/app/3d-body-measurement-tracker/id6749202389) (measurements)
+  - data from above → claude → insights
 - Transport
   - [Transit](https://transit.app) (public transit ETAs)
   - [GasBuddy](https://www.gasbuddy.com) (gas prices)
   - [SpotAngels](https://www.spotangels.com) (street parking finder)
   - [SpotHero](https://spothero.com) (big city cheap parking)
   - [Empower](https://apps.apple.com/us/app/empower-your-ride-your-way/id1454849875) (cheap uber/lyft)
+  - [seats.aero](https://seats.aero) (cheap flights; use as mcp)
 
 ## Miscellaneous
 
@@ -138,15 +142,16 @@ unnecessary; \*super worth imo
 - \*[Swish](https://highlyopinionated.co/swish) (window tiling)
 - \*[Hand Mirror](https://handmirror.app) (webcam peek)
 - \*[CleanShot X](https://cleanshot.com) (screenshot tool)
+- \*[Emoogle](https://www.emoogle.org) (emoji picker)
 - [Keka](https://www.keka.io) (archive/compression)
 - [Numi](https://numi.app) (NLP calculator)
 - [ColorSlurp](https://colorslurp.com) (color picker)
 - [Phoenix Slides](https://blyt.net/phxslides/) (SD card viewer)
 - [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704) (`caffeinate` GUI)
 - [CleanMyKeyboard](https://apps.apple.com/us/app/cleanmykeyboard/id6468120888) (disable keyboard)
-- [Emoogle](https://www.emoogle.org) (emoji picker)
 - [Mos](https://mos.caldis.me) (mouse configurator)
 - [Pearcleaner](https://pearcleaner.com) (filesys janitor)
+- [Remote Mouse](https://www.remotemouse.net/) (control mouse from phone)
 
 ## Digital Subs {#subs}
 
@@ -163,4 +168,4 @@ Once:
 - [Swish](https://highlyopinionated.co/swish) ($10/life; email for student promo)
 - [CleanShot X](https://cleanshot.com) ($20/life; use edu email)
 
-[Termius](https://termius.com), [Tower](https://www.git-tower.com) free through [GitHub Student](https://education.github.com/pack)
+[Tower](https://www.git-tower.com) free through [GitHub Student](https://education.github.com/pack)

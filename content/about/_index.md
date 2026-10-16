@@ -68,36 +68,31 @@ layout: "simple"
 
 Professional stuff on socials, but here's a bit more:
 
-- born in India, moved shortly after
-- childhood spent in Midwest, India, LA
-- high school + bachelors in the Bay Area
-- master's in LA, and now in DMV
+I've lived in:
+  - India
+  - Midwest
+  - Bay Area
+  - Los Angeles
+  - DMV (current)
 
-I like:
+I like to:
 
-- biking and walking with music
-- helping other people
+- bike and walk with music
+- help other people
   - reach out with any questions!
-- discovering new music
-- meticulously organizing
-- improving my regimen
-- sunday (or monday) resets
+- discover new music
+- watch movies/shows
+- meticulously organize
+- improve my regimen
 
-I think:
+Random interests:
 
-- EDC gear
-- a minimal & clean [desk setup](/tools)
-- bike maintenance
-- hiking
-- homelabbing (self hosting stuff)
-
-<p style="margin: 0; padding-left: 33px;">
-  is cool and I'm getting into it
-</p>
-
-I am:
-- practicing to do more with less
-- trying to use my time better
+- functional EDC gear
+- minimal & clean desk setups [(mine)](/tools)
+- a hike with a view
+- homelabbing
+  - as much as I can with a spare Lenovo
+- personal finance (recently)
 
 ----
 
